@@ -1,6 +1,16 @@
+.body {
+    background-color: #f5f0e6;
+}
+hero {
+    text-align: center;
+}
 h1 {
     font: italic;
-    color:rgb(43, 72, 37)
+    color:#6b705c;
+    margin: 0 auto;
+}
+.queen {
+    color:#b5838d
 }
 img {
     display: block;
@@ -11,14 +21,30 @@ img {
 }
 figure {
     display: block;
-    text-align: center;
     margin: 20px auto;
     width: 220px;
 }
 figcaption {
     font-size: 10px;
-    color: #555;
+    color: #3e3e3e;
     font-style: italic;
     margin-top: 6px;
-    
+   
+}
+.ada_years {
+    text-align: center;
+    color: #b5838d;
+}
+.facts {
+    text-align: left;
+    background-color: #f5f2e7;
+    border: 2px solid #A0522D;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 60%;
+    color: #556B2F;
+}
+.facts h2 {
+    text-align: center;
 }
