@@ -1,16 +1,22 @@
-.body {
+body {
     background-color: #f5f0e6;
 }
-hero {
+.hero {
     text-align: center;
 }
 h1 {
     font: italic;
     color:#6b705c;
-    margin: 0 auto;
+    margin: 0 auto 6px;
 }
 .queen {
     color:#b5838d
+}
+figure {
+    display: block;
+    margin: 20px auto;
+    width: 220px;
+    text-align: center;
 }
 img {
     display: block;
@@ -19,13 +25,8 @@ img {
     border-radius: 10px;
     margin: 0 auto;
 }
-figure {
-    display: block;
-    margin: 20px auto;
-    width: 220px;
-}
 figcaption {
-    font-size: 10px;
+    font-size: 12px;
     color: #3e3e3e;
     font-style: italic;
     margin-top: 6px;
