@@ -42,3 +42,25 @@ img {
   height: auto;
   mix-blend-mode: multiply;
 }
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+nav a:link {
+  color: black;
+}
+nav a:visited {
+  color: rgb(100, 45, 100);
+}
+button {
+  background-color: rgba(93, 141, 122, 0.531);
+  color: black;
+  border: none;
+  padding: 5px 20px;
+}
