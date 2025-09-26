@@ -414,7 +414,6 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
-  
 }
 
 /*--------------------------------------------------------------
@@ -725,63 +724,49 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: clamp(420px, 60vh, 680px);
   position: relative;
-  padding: 120px 0 60px;
-  display: flex;
-  align-items: center;
+  display: grid;              /* was flex */
+  place-items: center;        /* centers both layers */
+  padding: 64px 0 40px;       /* less vertical sprawl */
+  background: #f9f4ea;        /* keep as your banner bg, not red :) */
+  overflow: hidden;
 }
-
-@media (min-width: 1200px) {
-  .hero:after {
-    position: absolute;
-    content: "";
-    width: 44%;
-    background-image: linear-gradient(180deg, color-mix(in srgb, var(--background-color), transparent 15%), color-mix(in srgb, var(--background-color), transparent 15%) 100%), linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0) 100%);
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-  }
-}
-
-.hero:before {
-  position: absolute;
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 40%);
-  inset: 0;
-  z-index: 2;
-}
-
-.hero img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.hero-img {
+  grid-area: 1 / 1;
+  width: min(90vw, 820px);    /* responsive cap, no cropping */
+  height: auto;
   z-index: 1;
 }
-
-.hero .container,
-.hero .container-fluid {
-  z-index: 3;
-  position: relative;
+.hero .container {
+  grid-area: 1 / 1;           /* sits on top of the image */
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  transform: translateY(50%);
 }
-
 .hero h1 {
-  margin: 0;
-  font-size: 3rem;
+  margin: 12px 0 12px;
+  font-size: clamp(32px, 7vw, 60px); /* scales but stays sane */
   font-weight: 700;
+  color: #111;
+  letter-spacing: 0.12em;
+  white-space:nowrap;
+  display: block;
   
 }
-
-.hero blockquote {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  padding-left: 20px;
-  border-left: 2px solid var(--accent-color);
-  margin: 40px 0;
+.hero p {
+  margin: 0 auto;
+  color: #111;
+  font-size: 15px;
+  font-weight: 1rem;
+  padding-bottom: 10px;
 }
-
+.hero .d-flex {
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
 .hero .btn-get-started {
   color: var(--contrast-color);
   background: var(--accent-color);
@@ -789,26 +774,17 @@ section,
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
-  display: inline-block;
+  display: inline-flex;
   padding: 12px 30px;
   border-radius: 50px;
   transition: 0.5s;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  
 }
-
 .hero .btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
-}
-
-@media (max-width: 640px) {
-  .hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
-    font-size: 13px;
-  }
 }
 
 /*--------------------------------------------------------------
