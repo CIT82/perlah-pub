@@ -742,7 +742,7 @@ section,
   grid-area: 1 / 1;           /* sits on top of the image */
   z-index: 2;
   text-align: center;
-  max-width: 900px;
+  max-width: none;
   transform: translateY(50%);
 }
 .hero h1 {
@@ -757,16 +757,19 @@ section,
 }
 .hero p {
   margin: 0 auto;
-  color: #111;
-  font-size: 15px;
-  font-weight: 1rem;
+  color: #111111;
+  font-size: 17px;
   padding-bottom: 10px;
+  display: inline-block;
+  width: auto;
 }
 .hero .d-flex {
   justify-content: center;
   align-items: center;
   gap: 12px;
+  
 }
+
 .hero .btn-get-started {
   color: var(--contrast-color);
   background: var(--accent-color);
@@ -786,6 +789,123 @@ section,
 .hero .btn-get-started:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
+
+/* Optional fallback if you don't already define this */
+
+/* ===== Metrics strip ===== */
+.why-metrics{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:28px;
+  padding:14px 18px;
+  border-radius:14px;
+
+  /* background + border tinted from your accent */
+  background: rgba(62,81,122,.08); /* fallback */
+  background: color-mix(in srgb, var(--accent-color), #ffffff 92%);
+  border: 1px solid rgba(62,81,122,.15); /* fallback */
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+
+  /* lift + animation hooks */
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 6px 20px rgba(0,0,0,.06);
+  transition: transform .25s ease, box-shadow .25s ease;
+  will-change: transform, box-shadow;
+}
+.why-metrics:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0,0,0,.10),
+              0 0 0 1px color-mix(in srgb, var(--accent-color), transparent 85%);
+}
+
+/* soft moving sheen */
+.why-metrics::before{
+  content:"";
+  position:absolute; inset:-1px;
+  border-radius: inherit;
+  z-index: 1; pointer-events:none;
+  background: linear-gradient(100deg,
+              transparent 0%,
+              rgba(255,255,255,.55) 12%,
+              transparent 24%);
+  background-size: 280% 100%;
+  animation: sweep 3.2s linear infinite;
+  mix-blend-mode: screen;
+  opacity:.40;
+}
+@keyframes sweep{
+  0%   { background-position: 120% 0; }
+  100% { background-position: -120% 0; }
+}
+
+
+/* keep content above sheen */
+.why-metrics > *{ position: relative; z-index: 2; }
+
+/* items + separators */
+.metric{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  animation: rise-in .55s cubic-bezier(.2,.8,.2,1) both;
+}
+.metric + .metric{
+  padding-left:18px;
+  border-left:1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+}
+
+/* staggered entry */
+.metric:nth-child(2){ animation-delay: .10s; }
+.metric:nth-child(3){ animation-delay: .20s; }
+.metric:nth-child(4){ animation-delay: .30s; }
+
+@keyframes rise-in{
+  from{ transform: translateY(10px) scale(.98); opacity:0; filter: blur(1px); }
+  to  { transform: translateY(0)   scale(1);    opacity:1; filter: blur(0); }
+}
+
+/* typography */
+.metric .value{
+  font-weight:800;
+  font-size: clamp(20px, 2.6vw, 28px);
+  color: var(--accent-color);
+  letter-spacing:.01em;
+  transition: transform .2s ease, text-shadow .2s ease;
+}
+.metric .label{
+  font-size:.95rem;
+  color:#6b7280;
+  white-space:nowrap;
+}
+
+/* tiny float on hover */
+.why-metrics:hover .value{
+  transform: translateY(-2px);
+  text-shadow: 0 8px 20px color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+/* responsive */
+@media (max-width:576px){
+  .why-metrics{ gap:12px; }
+  .metric + .metric{ border:0; padding-left:0; }
+  .metric .value{ font-size: clamp(18px, 5vw, 22px); }
+}
+
+/* dark-section variant (optional) */
+.dark .why-metrics{
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+.dark .metric + .metric{ border-left:1px solid rgba(255,255,255,.12); }
+.dark .metric .value{ color:#fff; }
+.dark .metric .label{ color: rgba(255,255,255,.85); }
+
+
+
 
 /*--------------------------------------------------------------
 # Why Us Section
