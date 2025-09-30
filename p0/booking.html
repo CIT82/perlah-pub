@@ -1,10 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Booking - Hire Ground</title>
-   <meta name="description" content="Hire Ground provides practical training in leadership, communication, and workplace readiness—plus business support in areas like QuickBooks, insurance, and team training." />
-    <meta name="keywords" content="Hire Ground, professional development, leadership training, workplace readiness, mentorship programs, business coaching" />
+    <title>Booking - Hire Ground </title>
+    <meta
+      name="description"
+      content="Hire Ground provides practical training in leadership, communication, and workplace readiness—plus business support in areas like QuickBooks, insurance, and team training."
+    />
+    <meta
+      name="keywords"
+      content="Hire Ground, professional development, leadership training, workplace readiness, mentorship programs, business coaching"
+    />
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
@@ -13,10 +20,10 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+   <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+/>
 
     <!-- Vendor CSS Files -->
     <link
@@ -46,7 +53,7 @@
   ======================================================== -->
   </head>
 
-  <body class="index-page">
+  <body class="booking-page">
     <header id="header" class="header d-flex align-items-center fixed-top">
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
@@ -96,8 +103,143 @@
         </nav>
       </div>
     </header>
+   
+  <main class="main">
+<section class="page-title booking-hero">
+  <div class="container">
+    <span class="mh-tiny">Booking</span>
+    <h1 class="mh-title">Booking & Availability</h1>
+  </div>
+</section>
+    <!-- HERO: split text + photo -->
+   <!-- Intro split (photo + Pick your path) -->
+<section class="bk-intro">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <h2 class="mh-title">Pick your path</h2>
+        <p class="body-text bk-lead">
+          Choose a service and either call us now or send a quick request, we’ll reply with times and next steps.
+        </p>
+        <div class="bk-cta-row">
+          <a href="#bk-request" class="bk-btn">Send a request</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="bk-photo">
+          <img src="assets/img/mentors.jpg" alt="Friendly coaching session" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer id="footer" class="footer light-background">
+
+    <!-- SERVICE PICKER-->
+    <section class="bk-band bk-band--beige" id="bk-picker">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="mh-title">What would you like to book?</h2>
+          <p class="body-text">Make a quick selection below.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Picker (radio cards) -->
+          <div class="col-lg-5">
+            <form id="bk-select">
+              <div class="bk-option">
+                <input type="radio" id="svc-discovery" name="service" value="Discovery Call" checked />
+                <label for="svc-discovery">
+                  <i class="bi bi-chat-dots"></i>
+                  <div>
+                    <strong>Discovery Call</strong>
+                    <span>15–20 min alignment chat</span>
+                  </div>
+                </label>
+              </div>
+
+              <div class="bk-option">
+                <input type="radio" id="svc-workshop" name="service" value="Workshop" />
+                <label for="svc-workshop">
+                  <i class="bi bi-easel2"></i>
+                  <div>
+                    <strong>Workshop</strong>
+                    <span>Hands-on training for groups</span>
+                  </div>
+                </label>
+              </div>
+
+              <div class="bk-option">
+                <input type="radio" id="svc-leadership" name="service" value="Leadership Training" />
+                <label for="svc-leadership">
+                  <i class="bi bi-flag"></i>
+                  <div>
+                    <strong>Leadership Training</strong>
+                    <span>Series that builds habits</span>
+                  </div>
+                </label>
+              </div>
+
+              <div class="bk-option">
+                <input type="radio" id="svc-mentorship" name="service" value="Mentorship" />
+                <label for="svc-mentorship">
+                  <i class="bi bi-stars"></i>
+                  <div>
+                    <strong>Mentorship</strong>
+                    <span>1:1 momentum and support</span>
+                  </div>
+                </label>
+              </div>
+
+              <div class="bk-inline-actions">
+                <a href="tel:1559999999" class="bk-link"><i class="bi bi-telephone"></i> Call us instead</a>
+              </div>
+            </form>
+          </div>
+
+          <!-- Request form (Formspree) -->
+          <div class="col-lg-7" id="bk-request">
+            <div class="bk-card">
+              <h3 class="mb-2">Send a quick request</h3>
+              <p class="body-text mb-3">We’ll respond with available times.</p>
+
+              <form action="https://formspree.io/f/xanpelwk" method="POST" class="bk-form">
+                <!-- service field auto-filled from picker -->
+                <input type="hidden" name="service" id="bk-service-field" value="Discovery Call" />
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" required />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Preferred dates/times</label>
+                    <input type="text" name="times" class="form-control" placeholder="e.g., Weekdays after 3pm; Sat mornings" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Notes (optional)</label>
+                    <textarea name="notes" class="form-control" rows="4" placeholder="Anything else we should know?"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="bk-btn w-auto">Send request</button>
+                  </div>
+                </div>
+
+                <!-- formspree statuses (optional) -->
+                <p class="small mt-2 mb-0">Prefer to chat? <a href="tel:1559999999" class="bk-link">Call us</a>.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!-- Footer -->
+    <footer id="footer" class="footer dark-background">
       <div class="footer-top">
         <div class="container">
           <div class="row gy-4">
@@ -107,8 +249,9 @@
                 <span class="sitename">Hire Ground</span>
               </a>
               <p>
-                Hire Ground helps you build real-world skills—from communication
-                to leadership, so you're ready for every opportunity.
+                Hire Ground helps you build real-world skills, from
+                communication to leadership, so you're ready for every
+                opportunity.
               </p>
               <div class="social-links d-flex mt-4">
                 <a href="https://facebook.com"
@@ -166,8 +309,6 @@
           © <span>Copyright</span>
           <strong class="px-1 sitename">Hire Ground</strong>
           <span>All Rights Reserved</span>
-          
-        
         </p>
         <p><a href="sitemap.html">Sitemap</a></p>
         <div class="credits">
@@ -201,7 +342,10 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script>
+      new PureCounter();
+    </script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
