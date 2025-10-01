@@ -1345,12 +1345,12 @@ body {
     left: 56%;
   }
 }
-  /* ================================
+/* ================================
    BOOKING 
    ================================ */
 
-  /* 1) HERO */
-  .booking-page .bk-hero {
+/* 1) HERO */
+.booking-page .bk-hero {
   display: block;
   font-size: 2.5rem;
   font-weight: 300;
@@ -1359,38 +1359,38 @@ body {
   color: var(--brand-navy);
   margin-bottom: 1rem;
   font-family: var(--heading-font);
-  }
-  .booking-page .bk-lead {
+}
+.booking-page .bk-lead {
   max-width: 720px;
   margin: 0 auto;
   font-size: 1.05rem;
   line-height: 1.7;
   color: var(--body-ink);
-  }
+}
 
-  /* photo frame */
-  .booking-page .bk-photo {
-    background: var(--bk-surface);
-    border: 1px solid var(--bk-border);
-    padding: 10px;
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
-  }
-  .booking-page .bk-photo img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 4/3; 
-  }
+/* photo frame */
+.booking-page .bk-photo {
+  background: var(--bk-surface);
+  border: 1px solid var(--bk-border);
+  padding: 10px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+}
+.booking-page .bk-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
 
-  /* hero CTAs */
-  .booking-page .bk-cta-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 14px;
-  }
-  .booking-page .bk-btn {
+/* hero CTAs */
+.booking-page .bk-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 14px;
+}
+.booking-page .bk-btn {
   display: inline-flex;
   align-items: center;
   padding: 14px 28px;
@@ -1400,113 +1400,113 @@ body {
   font-weight: 500;
   color: var(--brand-navy);
   transition: all 0.25s ease;
-  }
+}
 .booking-page .bk-btn:hover {
   background: none;
   color: var(--accent-color);
   transform: translateY(-1px);
-  }
+}
 
+/* radio card options */
 
-  /* radio card options */
+.booking-page .bk-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.booking-page .bk-option label {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+  padding: 14px 14px;
+  border: 1px solid var(--bk-border);
+  background: var(--bk-surface);
+  border-radius: 10px;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.booking-page .bk-option label i {
+  font-size: 22px;
+  color: var(--bk-accent);
+}
+.booking-page .bk-option label strong {
+  display: block;
+  color: var(--bk-navy);
+}
+.booking-page .bk-option label span {
+  display: block;
+  font-size: 0.95rem;
+  color: rgba(15, 23, 33, 0.66);
+}
+.booking-page .bk-option input:checked + label {
+  border-color: color-mix(in srgb, var(--bk-accent), #000 15%);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
 
-  .booking-page .bk-option input {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-  }
-  .booking-page .bk-option label {
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    gap: 12px;
-    align-items: center;
-    cursor: pointer;
-    padding: 14px 14px;
-    border: 1px solid var(--bk-border);
-    background: var(--bk-surface);
-    border-radius: 10px;
-    transition: border-color 0.18s ease, box-shadow 0.18s ease;
-  }
-  .booking-page .bk-option label i {
-    font-size: 22px;
-    color: var(--bk-accent);
-  }
-  .booking-page .bk-option label strong {
-    display: block;
-    color: var(--bk-navy);
-  }
-  .booking-page .bk-option label span {
-    display: block;
-    font-size: 0.95rem;
-    color: rgba(15, 23, 33, 0.66);
-  }
-  .booking-page .bk-option input:checked + label {
-    border-color: color-mix(in srgb, var(--bk-accent), #000 15%);
-    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
-  }
+/* inline secondary action under options */
+.booking-page .bk-inline-actions {
+  margin-top: 10px;
+}
 
-  /* inline secondary action under options */
-  .booking-page .bk-inline-actions {
-    margin-top: 10px;
-  }
+/* 3) REQUEST CARD */
+.booking-page .bk-card {
+  background: var(--bk-surface);
+  border: 1px solid var(--bk-border);
+  padding: 20px;
+}
+.booking-page .bk-card h3 {
+  color: var(--bk-navy);
+  margin: 0;
+}
+.booking-page .bk-card .body-text {
+  color: rgba(15, 23, 33, 0.75);
+}
 
-  /* 3) REQUEST CARD */
-  .booking-page .bk-card {
-    background: var(--bk-surface);
-    border: 1px solid var(--bk-border);
-    padding: 20px;
-  }
-  .booking-page .bk-card h3 {
-    color: var(--bk-navy);
-    margin: 0;
-  }
-  .booking-page .bk-card .body-text {
-    color: rgba(15, 23, 33, 0.75);
-  }
+/* form details */
+.booking-page .bk-form .form-label {
+  font-weight: 600;
+  color: var(--bk-navy);
+}
+.booking-page .bk-form .form-control,
+.booking-page .bk-form .form-select {
+  border: 1px solid var(--bk-border);
+  border-radius: 8px;
+}
 
-  /* form details */
-  .booking-page .bk-form .form-label {
-    font-weight: 600;
-    color: var(--bk-navy);
-  }
-  .booking-page .bk-form .form-control,
-  .booking-page .bk-form .form-select {
-    border: 1px solid var(--bk-border);
-    border-radius: 8px;
-  }
+/* 4) SLIM CTA */
+.booking-page .bk-cta {
+  padding: 44px 0 64px;
+  background: color-mix(in srgb, var(--bk-accent), #ffffff 94%);
+}
 
-  /* 4) SLIM CTA */
-  .booking-page .bk-cta {
-    padding: 44px 0 64px;
-    background: color-mix(in srgb, var(--bk-accent), #ffffff 94%);
-  }
+/* 5) TYPOGRAPHY COLORS (Mission alignment) */
+.booking-page .bk-hero .mh-tiny {
+  color: color-mix(in srgb, var(--bk-navy), transparent 40%);
+}
+.booking-page .bk-hero .mh-title,
+.booking-page .bk-band .mh-title,
+.booking-page .bk-cta .mh-title {
+  color: var(--bk-navy);
+}
+.booking-page .bk-hero .body-text,
+.booking-page .bk-band .body-text {
+  color: rgba(15, 23, 33, 0.8);
+}
 
-  /* 5) TYPOGRAPHY COLORS (Mission alignment) */
-  .booking-page .bk-hero .mh-tiny {
-    color: color-mix(in srgb, var(--bk-navy), transparent 40%);
+@media (max-width: 991.98px) {
+  .booking-page .bk-hero {
+    padding-top: 72px;
   }
-  .booking-page .bk-hero .mh-title,
-  .booking-page .bk-band .mh-title,
-  .booking-page .bk-cta .mh-title {
-    color: var(--bk-navy);
-  }
-  .booking-page .bk-hero .body-text,
-  .booking-page .bk-band .body-text {
-    color: rgba(15, 23, 33, 0.8);
-  }
-
-  @media (max-width: 991.98px) {
-    .booking-page .bk-hero {
-      padding-top: 72px;
-    }
-  }
+}
 /* === Booking: intro split (matches <section class="bk-intro">) === */
 .booking-page .bk-intro {
   padding: 72px 0 40px;
   background: #fff;
 }
-.booking-page .bk-intro .bk-lead { max-width: 720px; }
-
+.booking-page .bk-intro .bk-lead {
+  max-width: 720px;
+}
 
 .booking-page .bk-photo img {
   display: block;
@@ -1518,7 +1518,7 @@ body {
 .booking-page .bk-btn,
 .booking-page .bk-btn-submit {
   all: unset; /* wipe out browser/Bootstrap button defaults */
-   display: inline-flex;
+  display: inline-flex;
   align-items: center;
   padding: 14px 28px;
   border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
@@ -1526,11 +1526,11 @@ body {
   text-decoration: none;
   font-weight: 500;
   color: var(--brand-navy);
-  transition: all 0.25s ease;;
+  transition: all 0.25s ease;
 }
 .booking-page .bk-btn:hover,
 .booking-page .bk-btn-submit:hover {
- background: none;
+  background: none;
   color: var(--accent-color);
   transform: translateY(-1px);
 }
@@ -1541,20 +1541,6 @@ body {
   margin-bottom: 24px;
   color: #3e517a;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ——— Welcome ——— */
 #welcome.welcome.section {
@@ -1759,7 +1745,7 @@ body {
 }
 
 /* =========================================
-   About Page (about.html) — clean scoped
+   About Page
    ========================================= */
 
 /* --- Header band --- */
@@ -1953,62 +1939,243 @@ about-page .section-title h2,
     margin-top: 6px;
   }
 }
-
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
-.services .service-item {
-  position: relative;
-  height: 100%;
-  margin-bottom: 30px;
+/* ================= Services ================ */
+:root {
+  --header-h: 88px; 
+}
+@media (max-width: 1199.98px) {
+  :root {
+    --header-h: 76px;
+  } /* mobile/tablet */
 }
 
-.services .service-item .icon {
-  margin-right: 20px;
+body.no-hero main {
+  padding-top: var(--header-h);
 }
 
-.services .service-item .icon i {
-  color: var(--accent-color);
-  font-size: 40px;
-  line-height: 0;
-  transition: 0.3s;
+@supports (selector(:has(*))) {
+  header.header.fixed-top + main:not(:has(.page-title)) {
+    padding-top: var(--header-h);
+  }
+}
+body.no-hero main {
+  padding-top: var(--header-h);
 }
 
-.services .service-item:hover .icon i {
-  color: var(--accent-color);
+@supports (selector(:has(*))) {
+  header.header.fixed-top + main:not(:has(.page-title)) {
+    padding-top: var(--header-h);
+  }
 }
 
-.services .service-item .title {
-  color: var(--heading-color);
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 20px;
-  transition: 0.3s;
+/* Titles */
+.service-title {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 300 !important;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: var(--brand-navy);
+  margin-bottom: 1rem;
+  font-family: var(--heading-font);
 }
 
-.services .service-item .description {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin-bottom: 10px;
+/* Tiny label */
+.service-tiny {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.services .service-item .readmore {
-  display: flex;
+/* Paragraphs */
+.services-page p,
+.body-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+/* Quick chips */
+.services-nav .container {
+  text-align: center; 
+}
+
+.chip-row {
+  display: inline-flex; 
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; 
+}
+
+.chip {
+  display: inline-flex;
   align-items: center;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  transition: 0.3s;
-  font-weight: 700;
-  font-size: 14px;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 86%);
+  border-radius: 999px; 
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  color: #3e517a;
+}
+.chip:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent-color);
 }
 
-.services .service-item .readmore i {
-  margin-left: 8px;
+/* Service Stripes */
+
+.service-stripes .stripe {
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr;
+  gap: min(3vw, 28px);
+  align-items: center;
+  margin: 28px 0;
+  padding: 18px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--accent-color), #fff 97%),
+    #fff 70%
+  );
+}
+.service-stripes .stripe.flipped {
+  grid-template-columns: 1.2fr 1.1fr;
+}
+.service-stripes .stripe.flipped .stripe-media {
+  order: 2;
+}
+.service-stripes .stripe.flipped .stripe-body {
+  order: 1;
 }
 
-.services .service-item:hover .title,
-.services .service-item:hover .readmore,
-.services .service-item:hover .icon i {
-  color: var(--accent-color);
+.stripe-media {
+  aspect-ratio: 19/10; 
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+}
+.stripe-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stripe-body .service-title {
+  font-size: clamp(22px, 2.6vw, 32px);
+  margin: 4px 0 8px;
+}
+.stripe-body .body-text {
+  margin: 4px 0 12px;
+}
+.stripe-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Buttons */
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--brand-navy);
+  transition: all 0.25s ease;
+}
+
+.btn-plain {
+   display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--brand-navy);
+  transition: all 0.25s ease;
+}
+.underline-hover {
+  position: relative;
+}
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.underline-hover:hover::after {
+  transform: scaleX(1);
+}
+
+/* Circle Portrait Testimonials */
+.circle-quotes {
+  background-color: #f8f4ea;
+}
+.circle-quotes .t-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.cq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 28px;
+}
+
+.cq-card {
+  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 16px;
+  padding: 28px 20px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.cq-card img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: -60px; /* circle overlaps top edge */
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  background: #f9f9f9;
+}
+
+.cq-card blockquote {
+  margin: 16px 0 10px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--default-color);
+}
+
+.cq-card figcaption {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--brand-navy);
+}
+
+@media (max-width: 768px) {
+  .cq-card img {
+    width: 72px;
+    height: 72px;
+    margin-top: -50px;
+  }
 }
 
 /* ============================
@@ -2326,10 +2493,10 @@ booking-page .bk-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 28px;             /* make it bigger */
+  padding: 14px 28px; /* make it bigger */
   border: 2px solid var(--bk-accent);
-  background: var(--bk-accent);   /* filled background */
-  color: #fff;                    /* white text */
+  background: var(--bk-accent); /* filled background */
+  color: #fff; /* white text */
   font-weight: 600;
   border-radius: 8px;
   text-decoration: none;
@@ -3487,7 +3654,7 @@ body.no-hero main {
 
 /* --- Global text inside Mentorship sections (Mission Layout) --- */
 
-/* Section titles -> Mission title style in brand navy */
+/* Section titles -> Mission title  */
 .mentorship-page .section-title h2,
 .mentorship-page .mint-card h2,
 .mentorship-page .mentorship-teaser h3 {
