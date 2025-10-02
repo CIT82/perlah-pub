@@ -2178,6 +2178,148 @@ body.no-hero main {
   }
 }
 
+/* ===========================
+   Workshops Page (scoped)
+   =========================== */
+.mh-tiny {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  text-align: center;
+}
+.mh-subtitle {
+  text-align: center !important;
+   font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+.mh-title {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: var(--brand-navy);
+  margin-bottom: 1rem;
+  font-family: var(--heading-font);
+  text-align: center !important;
+}
+.workshops-page .session-title{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 24px;
+  color: #3e517a;
+}
+
+
+.btn-plain{
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--brand-navy);
+  transition: all 0.25s ease;
+}
+.btn-plain:hover{
+  background: none;
+  color: var(--accent-color);
+  transform: translateY(-1px);
+}
+
+/* Workshop cards */
+.workshop-card{
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  height: 100%;
+  box-shadow: 0 8px 22px rgba(0,0,0,.06);
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+.workshop-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(0,0,0,.10);
+}
+
+/* Polaroid-style square image */
+.polaroid-img {
+  width: 100%;
+  aspect-ratio: 1/1;           
+  border-radius: 12px;       
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+  margin: 0 auto 18px;
+  position: relative;
+  padding: 6px;              
+}
+
+.polaroid-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+
+.polaroid-img::after {
+  content: "";
+  display: block;
+  height: 12px;              
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  border-radius: 0 0 8px 8px;
+}
+
+
+/* Card body + list */
+.card-body-wrap{
+  padding: 4px 10px 8px;
+}
+.workshop-card ul{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  color: var(--bk-navy);
+}
+.workshop-card li{
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 6px 0;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-size: 0.975rem;
+}
+.workshop-card li i{
+  color: #3e517a;
+  font-size: 1.05rem;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+
+.workshops-page .section .text-center .btn-plain{
+  margin: 8px 6px 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px){
+  .circle-img{ width: 132px; height: 132px; }
+  .btn-plain{ padding: 9px 18px; font-size: 13px; }
+}
+
+
+
 /* ============================
    Hire Ground — Slim Cards 
    ============================ */
@@ -2812,16 +2954,16 @@ booking-page .bk-btn {
 # Team Section
 --------------------------------------------------------------*/
 .timeline {
-  list-style: none; /* removes bullets/numbers */
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 .timeline li {
-  list-style: none; /* make extra sure */
+  list-style: none; 
 }
 .team-timeline {
   background: #fff; /* white */
-  border-top: 2px solid #92918e; /* thin beige accent */
+  border-top: 2px solid #92918e; 
 }
 .t-squiggle {
   color: color-mix(in srgb, #3e517a, transparent 20%);
@@ -2843,7 +2985,7 @@ booking-page .bk-btn {
   object-fit: cover;
 }
 
-/* Mission layout header bits */
+
 .mh-tiny {
   display: inline-block;
   font-size: 12px;
