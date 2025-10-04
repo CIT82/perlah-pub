@@ -1159,7 +1159,7 @@ body {
   margin-bottom: 8px;
 }
 
-/*page title: "Our Mission" */
+/*"Our Mission" */
 .mh-title {
   font-size: 2.2rem !important;
   font-weight: 300 !important;
@@ -1941,7 +1941,7 @@ about-page .section-title h2,
 }
 /* ================= Services ================ */
 :root {
-  --header-h: 88px; 
+  --header-h: 88px;
 }
 @media (max-width: 1199.98px) {
   :root {
@@ -2000,14 +2000,14 @@ body.no-hero main {
 
 /* Quick chips */
 .services-nav .container {
-  text-align: center; 
+  text-align: center;
 }
 
 .chip-row {
-  display: inline-flex; 
+  display: inline-flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .chip {
@@ -2016,7 +2016,7 @@ body.no-hero main {
   gap: 8px;
   padding: 10px 20px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 86%);
-  border-radius: 999px; 
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 500;
   transition: transform 0.2s ease, border-color 0.2s ease;
@@ -2055,7 +2055,7 @@ body.no-hero main {
 }
 
 .stripe-media {
-  aspect-ratio: 19/10; 
+  aspect-ratio: 19/10;
   overflow: hidden;
   border-radius: 16px;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
@@ -2093,7 +2093,7 @@ body.no-hero main {
 }
 
 .btn-plain {
-   display: inline-flex;
+  display: inline-flex;
   align-items: center;
   padding: 14px 28px;
   border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
@@ -2191,7 +2191,7 @@ body.no-hero main {
 }
 .mh-subtitle {
   text-align: center !important;
-   font-size: 1rem;
+  font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
@@ -2207,7 +2207,7 @@ body.no-hero main {
   font-family: var(--heading-font);
   text-align: center !important;
 }
-.workshops-page .session-title{
+.workshops-page .session-title {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.3;
@@ -2215,8 +2215,7 @@ body.no-hero main {
   color: #3e517a;
 }
 
-
-.btn-plain{
+.btn-plain {
   display: inline-flex;
   align-items: center;
   padding: 14px 28px;
@@ -2227,52 +2226,51 @@ body.no-hero main {
   color: var(--brand-navy);
   transition: all 0.25s ease;
 }
-.btn-plain:hover{
+.btn-plain:hover {
   background: none;
   color: var(--accent-color);
   transform: translateY(-1px);
 }
 
 /* Workshop cards */
-.workshop-card{
+.workshop-card {
   background: var(--surface-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
   border-radius: 16px;
   padding: 18px 18px 16px;
   height: 100%;
-  box-shadow: 0 8px 22px rgba(0,0,0,.06);
-  transition: box-shadow .25s ease, transform .25s ease;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
-.workshop-card:hover{
+.workshop-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 36px rgba(0,0,0,.10);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
 }
 
 /* Polaroid-style square image */
 .polaroid-img {
   width: 100%;
-  aspect-ratio: 1/1;           
-  border-radius: 12px;       
+  aspect-ratio: 1/1;
+  border-radius: 12px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
   margin: 0 auto 18px;
   position: relative;
-  padding: 6px;              
+  padding: 6px;
 }
 
 .polaroid-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block; 
+  display: block;
 }
-
 
 .polaroid-img::after {
   content: "";
   display: block;
-  height: 12px;              
+  height: 12px;
   background: #fff;
   position: absolute;
   left: 0;
@@ -2281,18 +2279,17 @@ body.no-hero main {
   border-radius: 0 0 8px 8px;
 }
 
-
 /* Card body + list */
-.card-body-wrap{
+.card-body-wrap {
   padding: 4px 10px 8px;
 }
-.workshop-card ul{
+.workshop-card ul {
   list-style: none;
   padding: 0;
   margin: 0 0 12px;
   color: var(--bk-navy);
 }
-.workshop-card li{
+.workshop-card li {
   display: flex;
   align-items: baseline;
   gap: 10px;
@@ -2300,26 +2297,243 @@ body.no-hero main {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 0.975rem;
 }
-.workshop-card li i{
+.workshop-card li i {
   color: #3e517a;
   font-size: 1.05rem;
   line-height: 1;
   margin-top: 2px;
 }
 
-
-.workshops-page .section .text-center .btn-plain{
+.workshops-page .section .text-center .btn-plain {
   margin: 8px 6px 0;
 }
 
 /* Responsive tweaks */
-@media (max-width: 576px){
-  .circle-img{ width: 132px; height: 132px; }
-  .btn-plain{ padding: 9px 18px; font-size: 13px; }
+@media (max-width: 576px) {
+  .circle-img {
+    width: 132px;
+    height: 132px;
+  }
+  .btn-plain {
+    padding: 9px 18px;
+    font-size: 13px;
+  }
 }
 
+/* ============================
+   Leadership Training
+   ============================ */
 
+body.leader-page {
+  --header-height: 80px; /* adjust if your header is taller */
+  padding-top: var(--header-height);
+}
 
+/* ---------- Page Title  ---------- */
+.leader-page .page-title {
+  text-align: center;
+  padding: 140px 0 44px; 
+  background: transparent; 
+  border-bottom: 1px solid, color-mix(in srgb, var(--default-color), transparent 88%);
+}
+.leader-page .page-title .mh-tiny {
+  display: inline-block;
+  margin-bottom: 6px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #3e517a;
+}
+.leader-page .page-title .mh-title,
+.leader-page .page-title h1 {
+  display: block;
+  font-family: var(--heading-font);
+  font-size: clamp(32px, 5vw, 42px);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #3e517a;
+  margin: 0;
+}
+.body-text {
+   font-size: 1rem !important;
+  line-height: 1.8 !important;
+  margin-bottom: 20px !important;
+  color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
+}
+
+.leader-page .mh-title {
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 10px 0 12px;
+  font-size: clamp(28px, 5vw, 42px);
+}
+.leader-page .body-text {
+  color: color-mix(in srgb, var(--default-color), transparent 12%);
+  font-size: 1.05rem;
+}
+
+/* ---------- Hero (angled split with blob image) ---------- */
+.leader-page .leader-hero {
+  position: relative;
+  overflow: clip;
+  background: #fff;
+  padding: 100px 0 80px; /* already offset by body padding-top */
+  isolation: isolate;
+}
+.leader-page .leader-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(62, 81, 122, 0.1), transparent 55%);
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+  z-index: 0;
+}
+.leader-page .leader-hero .hero-media {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leader-page .leader-hero .hero-blob {
+  width: min(520px, 90%);
+  aspect-ratio: 1/1;
+  border-radius: 28% 72% 60% 40% / 42% 36% 64% 58%;
+  overflow: hidden;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+  border: 10px solid color-mix(in srgb, var(--accent-color), white 82%);
+}
+.leader-page .leader-hero .hero-blob img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ---------- Metrics ribbon ---------- */
+.leader-page .leader-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--accent-color), #ffffff 92%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
+}
+.leader-page .leader-metrics .metric {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+.leader-page .leader-metrics .value {
+  font-weight: 800;
+  font-size: clamp(20px, 2.4vw, 28px);
+  color: #3e517a;
+}
+.leader-page .leader-metrics .label {
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+/* ----------(Sessions Mosaic) ---------- */
+.leader-page .sessions.steps-band {
+  background: #f9f4ea;
+}
+
+.leader-page .sessions {
+  padding: 60px 0;
+}
+
+.leader-page .sessions .session-col {
+  display: flex; /* lets the cards stretch evenly */
+}
+
+.leader-page .sessions .session-card {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 16px;
+  padding: 22px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.leader-page .sessions .session-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.1);
+}
+
+.leader-page .sessions .session-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  font-weight: 800;
+  background: #3e517a;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.leader-page .sessions .session-card h3 {
+font-size: 1.3rem !important;
+  font-weight: 400 !important;
+  line-height: 1.3 !important;
+  margin-bottom: 16px !important;
+  color: #3e517a !important;
+}
+
+.leader-page .sessions .session-card p {
+  font-size: 1rem !important;
+  line-height: 1.8 !important;
+  margin-bottom: 20px !important;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+.leader-page .sessions .session-card ul {
+  margin: 10px 0 0;
+  padding-left: 1.1rem;
+}
+
+.leader-page .sessions .session-card li {
+  margin-bottom: 6px;
+}
+/* ===========================
+   CTA
+   =========================== */
+.leader-page .leader-cta {
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 75%);
+  border-radius: 18px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.leader-page .btn-plain {
+display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--brand-navy);
+  transition: all 0.25s ease;
+}
+
+.leader-page .btn-plain:hover {
+ background: none;
+  color: var(--accent-color);
+  transform: translateY(-1px);
+}
 /* ============================
    Hire Ground — Slim Cards 
    ============================ */
@@ -2959,11 +3173,11 @@ booking-page .bk-btn {
   padding: 0;
 }
 .timeline li {
-  list-style: none; 
+  list-style: none;
 }
 .team-timeline {
   background: #fff; /* white */
-  border-top: 2px solid #92918e; 
+  border-top: 2px solid #92918e;
 }
 .t-squiggle {
   color: color-mix(in srgb, #3e517a, transparent 20%);
@@ -2984,7 +3198,6 @@ booking-page .bk-btn {
   height: 100%;
   object-fit: cover;
 }
-
 
 .mh-tiny {
   display: inline-block;
@@ -3036,7 +3249,7 @@ booking-page .bk-btn {
   margin: 0 0 4px;
   font-weight: 800;
   letter-spacing: 0.01em;
-  color: #000; /* solid black for names */
+  color: #000; 
 }
 
 .t-meta .role {
@@ -3296,7 +3509,6 @@ body.no-hero main {
   display: block;
 }
 
-/* Intro copy (Mission body spec) */
 .hg-contact2 .hg-intro-title {
   font-size: clamp(1.25rem, 2.2vw, 1.5rem);
   font-weight: 600;
@@ -3794,9 +4006,6 @@ body.no-hero main {
   display: none !important;
 }
 
-/* --- Global text inside Mentorship sections (Mission Layout) --- */
-
-/* Section titles -> Mission title  */
 .mentorship-page .section-title h2,
 .mentorship-page .mint-card h2,
 .mentorship-page .mentorship-teaser h3 {
