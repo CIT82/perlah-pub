@@ -4010,7 +4010,7 @@ body.no-hero main {
 .mentorship-page .mint-card h2,
 .mentorship-page .mentorship-teaser h3 {
   display: block;
-  font-size: 2.2rem; /* “What’s landing first” sizing */
+  font-size: 2.2rem; 
   font-weight: 300;
   line-height: 1.3;
   letter-spacing: -0.5px;
@@ -4032,7 +4032,7 @@ body.no-hero main {
   margin-bottom: 14px;
 }
 
-/* Optional “short line” emphasis text (use on promos/flags) */
+
 .mentorship-page .short-strong {
   display: block;
   font-size: 1rem;
@@ -4042,7 +4042,7 @@ body.no-hero main {
   color: color-mix(in srgb, var(--default-color), transparent 10%);
 }
 
-/* Lists with check icons */
+
 .mentorship-page .mint-list {
   padding-left: 0;
   margin: 0 0 10px;
@@ -4059,7 +4059,7 @@ body.no-hero main {
   line-height: 1.6;
 }
 
-/* --- Intro band spacing (keep it snug under hero) --- */
+
 .mentorship-page .mentorship-intro {
   padding-top: 24px;
 }
@@ -4067,20 +4067,19 @@ body.no-hero main {
   margin-top: -6px;
 }
 
-/* --- Stacked photos: show base “holder” + floating image --- */
 .mentorship-page .stacked-photos {
   position: relative;
   max-width: 560px;
   margin: 0 auto;
 }
 
-/* Base frame (shows even if img fails to load) */
+
 .mentorship-page .stacked-photos > a:first-child {
   display: block;
-  background: #eee; /* holder color */
+  background: #eee; 
   border-radius: 14px;
   overflow: hidden;
-  aspect-ratio: 4 / 3; /* ensures visible holder */
+  aspect-ratio: 4 / 3; 
   position: relative;
 }
 .mentorship-page .stacked-photos > a:first-child img {
@@ -4118,7 +4117,6 @@ body.no-hero main {
   }
 }
 
-/* --- Polaroid style (teaser) --- */
 .mentorship-page .polaroid {
   display: inline-block;
   background: #fff;
@@ -4140,7 +4138,6 @@ body.no-hero main {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-/* --- Buttons on this page (optional — keep your existing if you like) --- */
 .mentorship-page .btn-mentorship {
   border: 2px solid var(--brand-navy);
   color: var(--brand-navy);
@@ -4170,7 +4167,7 @@ body.no-hero main {
 }
 
 /* =========================
-   Partnerships Page Styles
+   Partnerships Page 
    ========================= */
 
 /* Intro card + ribbon */
@@ -4356,6 +4353,156 @@ body.no-hero main {
     width: 120px;
     height: 120px;
   }
+}
+/* =======================
+   Athletes & Coaches Page
+   ======================= */
+.athletes-page .page-title.athletes-hero{
+  position: relative;
+  padding: 160px 0 40px;
+  text-align: center;
+  overflow: hidden;
+}
+.athletes-page .athletes-hero-img{
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: .25;               /* soft overlay */
+  mix-blend-mode: multiply;
+}
+.athletes-page .chip-row{
+  display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:14px;
+}
+.athletes-page .chip{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:8px 12px; border-radius:999px;
+  background: color-mix(in srgb, var(--accent-color), #ffffff 88%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 82%);
+  font-size: .9rem;
+}
+
+/* Split Program (fresh layout) */
+.athletes-page .split-program{
+  position: relative;
+  background: var(--background-color);
+}
+.athletes-page .split-program .diagonal-divider{
+  position: absolute; left:0; right:0; bottom:-60px; height:120px;
+  background: linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--accent-color), #ffffff 94%) 60%, transparent 100%);
+  transform: skewY(-3deg);
+  z-index: 0;
+}
+.athletes-page .split-card{
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 200px auto;
+  box-shadow: 0 10px 26px rgba(0,0,0,.06);
+}
+.athletes-page .split-card-media{
+  position: relative;
+  overflow: hidden;
+}
+.athletes-page .split-card-media img{
+  width: 100%; height: 100%; object-fit:cover; transform: scale(1.02);
+  transition: transform .35s ease;
+}
+
+.athletes-page .split-card-body{
+  padding: 22px 22px 24px;
+}
+.athletes-page .split-card .checklist{
+  margin: 12px 0 16px; padding-left: 0; list-style: none;
+}
+.athletes-page .split-card .checklist li{
+  padding-left: 26px; position: relative; margin: 6px 0;
+   font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+.athletes-page .split-card .checklist li::before{
+  content: "✔";
+  position: absolute; left: 0; top: 0; line-height: 1;
+  color: var(--accent-color); font-weight: 700;
+}
+.athletes-page .split-card.athletes .mh-title.h3,
+.athletes-page .split-card.coaches .mh-title.h3{
+  font-size: 30px !important;
+}
+
+/* Playbook Sessions */
+.athletes-page .playbook{
+  background: #f8f4ea;
+}
+.athletes-page .session-card{
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 14px;
+  padding: 22px;
+  height: 100%;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  position: relative;
+}
+.athletes-page .h5 {
+font-size: 1.3rem;
+font-weight: 300;
+line-height: 1.3;
+margin-bottom: 20px;
+color: #3e517a;
+}
+.athletes-page .session-card .session-num{
+  position: absolute; top: -14px; left: 16px;
+  background: #3e517a;
+  border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: .85rem;
+  letter-spacing: .05em;
+  color:  white;
+}
+.athletes-page .session-card .bullet{
+  margin: 10px 0 0; padding-left: 18px;
+}
+.athletes-page .session-card .bullet li{
+  margin: 6px 0;
+   font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+/* CTA */
+.athletes-page .athlete-cta{
+  background: color-mix(in srgb, var(--accent-color), #ffffff 88%);
+}
+.athletes-page .leader-cta{
+  text-align:center;
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 14px;
+  padding: 28px 20px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.06);
+}
+
+.btn-athletes {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--brand-navy);
+  transition: all 0.25s ease;
+}
+.btn-athletes:hover {
+  background: none;
+  color: var(--accent-color);
+  transform: translateY(-1px);
+}
+@media (max-width: 576px){
+  .athletes-page .split-card{ grid-template-rows: 180px auto; }
 }
 
 /* =========================================
