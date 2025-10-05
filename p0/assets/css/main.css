@@ -1360,6 +1360,9 @@ body {
   margin-bottom: 1rem;
   font-family: var(--heading-font);
 }
+.bk-intro .mh-title {
+  text-align: left !important;
+}
 .booking-page .bk-lead {
   max-width: 720px;
   margin: 0 auto;
