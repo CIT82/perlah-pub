@@ -1148,18 +1148,6 @@ body {
   background-size: cover;
 }
 
-/* Tiny label above title */
-.mh-tiny {
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent-color);
-  margin-bottom: 8px;
-}
-
-/*"Our Mission" */
 .mh-title {
   font-size: 2.2rem !important;
   font-weight: 300 !important;
@@ -1168,7 +1156,6 @@ body {
   color: #3e517a !important;
 }
 
-/* Section H2s: "What We Stand For", "How We Deliver" */
 .mh-h2 {
   font-size: 1.9rem;
   font-weight: 300;
@@ -1177,8 +1164,6 @@ body {
   color: #3e517a;
 }
 
-/* Medium headers (not skinny/huge): 
-   What We Do, Growth, Standards, Team, Results, CTA headline */
 .mh-h3 {
   font-size: 1.3rem !important;
   font-weight: 400 !important;
@@ -2182,7 +2167,7 @@ body.no-hero main {
 }
 
 /* ===========================
-   Workshops Page (scoped)
+   Workshops Page 
    =========================== */
 .mh-tiny {
   font-size: 12px;
@@ -2335,9 +2320,10 @@ body.leader-page {
 /* ---------- Page Title  ---------- */
 .leader-page .page-title {
   text-align: center;
-  padding: 140px 0 44px; 
-  background: transparent; 
-  border-bottom: 1px solid, color-mix(in srgb, var(--default-color), transparent 88%);
+  padding: 140px 0 44px;
+  background: transparent;
+  border-bottom: 1px solid,
+    color-mix(in srgb, var(--default-color), transparent 88%);
 }
 .leader-page .page-title .mh-tiny {
   display: inline-block;
@@ -2360,7 +2346,7 @@ body.leader-page {
   margin: 0;
 }
 .body-text {
-   font-size: 1rem !important;
+  font-size: 1rem !important;
   line-height: 1.8 !important;
   margin-bottom: 20px !important;
   color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
@@ -2487,7 +2473,7 @@ body.leader-page {
 }
 
 .leader-page .sessions .session-card h3 {
-font-size: 1.3rem !important;
+  font-size: 1.3rem !important;
   font-weight: 400 !important;
   line-height: 1.3 !important;
   margin-bottom: 16px !important;
@@ -2517,11 +2503,11 @@ font-size: 1.3rem !important;
   border-radius: 18px;
   padding: 28px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .leader-page .btn-plain {
-display: inline-flex;
+  display: inline-flex;
   align-items: center;
   padding: 14px 28px;
   border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
@@ -2533,7 +2519,7 @@ display: inline-flex;
 }
 
 .leader-page .btn-plain:hover {
- background: none;
+  background: none;
   color: var(--accent-color);
   transform: translateY(-1px);
 }
@@ -3252,7 +3238,7 @@ booking-page .bk-btn {
   margin: 0 0 4px;
   font-weight: 800;
   letter-spacing: 0.01em;
-  color: #000; 
+  color: #000;
 }
 
 .t-meta .role {
@@ -3594,217 +3580,249 @@ body.no-hero main {
 /* =========================================================
    PRICING PAGE
    ======================================================= */
-
-/* White heading and breadcrumbs on dark hero */
-.page-title .mb-2 {
-  color: #fff;
+.pricing-page .page-title.pricing-title {
+  padding: 110px 0 28px;
 }
-.page-title .breadcrumbs a,
-.page-title .breadcrumbs li::before {
-  color: #fff !important;
-}
-.page-title .breadcrumbs li,
-.page-title .breadcrumbs {
-  color: #fff !important;
-  transition: color 0.25s ease;
-}
-.page-title .breadcrumbs a:hover {
-  color: var(--accent-color) !important;
-}
-.page-title .breadcrumbs li:last-child {
-  color: var(--accent-color) !important;
-  font-weight: 580;
+.pricing-page .page-title.pricing-title:before {
+  display: none;
 }
 
-@media (max-width: 575.98px) {
-  .page-title.has-hero {
-    padding: 120px 0 48px;
-  }
-}
-/* ---------- Section Head ---------- */
-.pricing-scope .section-head {
+.pricing-page .mh-tiny {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
   text-align: center;
 }
+.pricing-page .mh-title {
+  font-family: var(--heading-font);
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #3e517a;
+  margin-bottom: 16px;
+}
+.mh-sub {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #3e517a;
+  margin-bottom: 16px;
+}
+.body-text {
+  font-family: var(--default-font);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #3e517a;
+}
+.lead-tight {
+  line-height: 1.5;
+}
+.pricing-media .pricing-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+}
 
-/* ---------- Banner ---------- */
-.pricing-scope .page-title.hero-banner {
-  background: #1b2f45 url("../img/pricing-pg.png") center/cover no-repeat;
-  min-height: 360px;
+.pricing-scope .section-head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pricing-scope .section-head h2 {
+  font-family: var(--heading-font);
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #3e517a;
+  margin-bottom: 8px;
+}
+.pricing-scope .section-head p {
+  margin: 0 auto;
+  color: #3e517a;
+  max-width: 720px;
+}
+.pricing-toggle {
   display: flex;
-  align-items: center;
-  position: relative;
-}
-.pricing-scope .page-title.hero-banner::before {
-  content: none;
-}
-
-/* ---------- Optional Light Band ---------- */
-.pricing-scope .beige-section {
-  background: transparent; /* was tinted */
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 88%);
-  border-bottom: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 88%);
-  padding: 20px 0 24px;
-}
-
-/* ---------- Billing Toggle ---------- */
-.pricing-scope .pricing-toggle {
-  display: flex;
-  gap: 10px;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  margin: 18px auto 0;
+  background: #fff;
+  border: 1px solid rgba(62, 81, 122, 0.18);
+  border-radius: 999px;
+  padding: 6px;
+  width: max-content;
 }
-.pricing-scope .toggle-btn {
-  appearance: none;
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
-  background: var(--surface-color);
-  padding: 8px 20px;
+.pricing-toggle .toggle-btn {
+  border: 0;
+  background: transparent;
+  font-family: var(--heading-font);
+  font-size: 0.95rem;
+  padding: 8px 8px;
+  border-radius: 999px;
+  color: #3e517a;
   cursor: pointer;
-  border-radius: 6px;
-  font-weight: 500;
-  color: var(--brand-navy);
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
-.pricing-scope .toggle-btn.is-active {
-  background: var(--brand-navy);
-  color: var(--contrast-color);
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+.pricing-toggle .toggle-btn.is-active {
+  background: #3e517a;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(62, 81, 122, 0.25);
 }
-
-/* ---------- Grid Helpers ---------- */
-.pricing-scope .pricing-grid > [class*="col-"] {
-  display: flex;
+.pricing-page section.pricing {
+  padding-top: 10px;
 }
 
-/* ---------- Plan Cards ---------- */
-:root {
-  --plan-title-h: 48px; /* h3 area */
-  --plan-sub-h: 32px; /* subtitle line */
-  --plan-badge-h: 24px; /* space reserved for badge (even if absent) */
-  --plan-price-h: 48px; /* price row height */
-  --plan-cta-h: 44px;
-}
-
-.pricing-scope .plan .badge {
-  display: inline-flex;
-  align-items: center;
-  height: var(--plan-badge-h);
-  padding: 0 5px;
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  background: #578565;
-  margin-top: auto;
-}
-.pricing-scope .plan {
+.plan {
   height: 100%;
-  display: grid;
-  grid-template-rows: auto auto 1fr auto auto;
+  background: #fff;
+  justify-content: space-between;
+  border: 1px solid rgba(62, 81, 122, 0.14);
+  border-radius: 14px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
   gap: 14px;
-  border: 1px solid #000;
-  padding: 22px;
-
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.pricing-scope .plan:hover {
-  border-color: #000;
-  box-shadow: 0 12px 28px color-mix(in srgb, var(--brand-navy), transparent 80%);
-  transform: translateY(-2px);
+.plan:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
 }
-.pricing-scope .plan .plan-head h3 {
-  margin: 0;
-  min-height: var(--plan-title-h);
-  display: flex;
-  align-items: flex-end;
-  font-family: var(--heading-font);
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-.pricing-scope h4 {
-  font-weight: 600;
-  font-family: var(--heading-font);
-}
-.pricing-scope .plan .plan-head {
-  min-height: calc(
-    var(--plan-title-h) + var(--plan-sub-h) + var(--plan-badge-h)
-  );
-}
-.pricing-scope .plan .plan-head p {
+
+.plan-head h3 {
+  font-size: 1.3rem;
   font-weight: 400;
-  margin: 0.25rem 0 0;
-  min-height: var(--plan-sub-h);
-  display: flex;
-  align-items: flex-start;
-  color: color-mix(in srgb, var(--default-color), transparent 35%);
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: #3e517a;
 }
-.pricing-scope .plan .plan-price {
+.plan-head p {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  margin-bottom: 14px;
+}
+.ready-sub {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #3e517a;
+}
+.plan-head .badge {
+  display: inline-block;
+  margin-top: 8px;
+  background: var(--accent-color);
+  color: white;
+  border: 1px solid rgba(62, 81, 122, 0.18);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.plan-price {
+  min-height: 44px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px 8px;
+  flex-wrap: wrap;
+}
+.plan-price .price {
   font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3e517a;
 }
-.pricing-scope .plan .plan-price .price {
-  display: flex;
-  line-height: 1;
-  font-size: clamp(28px, 3.2vw, 36px);
-  font-weight: 800;
-  align-items: flex-end;
+.plan-price .unit {
+  font-size: 0.95rem;
+  color: rgba(62, 81, 122, 0.85);
 }
-.pricing-scope .plan .plan-price .unit {
-  white-space: nowrap;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  margin-left: 6px;
+
+.plan-price .price,
+.plan-price .unit {
+  display: none;
 }
-.pricing-scope .plan .plan-list {
-  margin: 0;
-  padding: 0;
+.plan-list {
   list-style: none;
+  padding-left: 0;
+  margin: 0 0 4px;
+}
+.plan-list li {
+  position: relative;
+  padding-left: 22px;
+  margin: 8px 0;
+  color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
+}
+.plan-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #3e517a;
+  font-weight: 700;
+}
+
+.plan .btn-plain {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--brand-navy);
+  transition: all 0.25s ease;
+  margin-top: auto;
+}
+.plan .btn-plain:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
+}
+
+.plan-foot {
+  min-height: 56px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 13px;
+}
+
+.deals-hub {
+  background: #f9f4ea; 
+  padding: 80px 0;
+  border-top: 1px solid rgba(62, 81, 122, 0.15);
+  border-bottom: 1px solid rgba(62, 81, 122, 0.15);
+}
+.deals-grid {
   display: grid;
-  gap: 8px;
-}
-.pricing-scope .plan .plan-cta {
-  align-self: stretch;
-}
-.pricing-scope .plan .plan-cta .btn-plain {
-  width: 100%;
-}
-.pricing-scope .plan .plan-foot {
-  align-self: end;
-  font-size: 12px;
-  color: color-mix(in srgb, var(--default-color), transparent 45%);
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
 
-@media (max-width: 575.98px) {
-  :root {
-    --plan-title-h: auto;
-    --plan-sub-h: auto;
-  }
+.deal-card {
+  background: #fff;
+  border: 1px solid rgba(62, 81, 122, 0.14);
+  border-radius: 18px;
+  padding: 28px 22px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
-/* ---------- Flat Cards ---------- */
-.pricing-scope .card-flat {
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  background: var(--surface-color);
-  padding: 20px;
+/* Card A — Ready to start*/
+.deal-card.mod-start {
+  background: white;
+  border-color: rgba(62, 81, 122, 0.18);
 }
-
-/* ---------- Lists ---------- */
-.pricing-scope ul.bulleted {
-  margin: 0;
-  padding-left: 1.1rem;
-}
-.pricing-scope ul.bulleted li {
-  margin: 0.15rem 0;
-}
-.pricing-scope ul.two-col {
-  columns: 2;
-  column-gap: 2rem;
-}
-@media (max-width: 576px) {
-  .pricing-scope ul.two-col {
-    columns: 1;
-  }
-}
-
-/* ---------- Square Buttons ---------- */
-.pricing-scope .btn-plain {
+.deal-card.mod-start .btn-plain {
   display: inline-flex;
   align-items: center;
   padding: 14px 28px;
@@ -3815,164 +3833,55 @@ body.no-hero main {
   color: var(--brand-navy);
   transition: all 0.25s ease;
 }
-.pricing-scope .btn-plain:hover {
+.deal-card.mod-start .btn-plain:hover {
   background: none;
   color: var(--accent-color);
   transform: translateY(-1px);
 }
-.pricing-scope .btn-plain.invert {
-  border-color: var(--contrast-color);
-  color: var(--contrast-color);
-}
-.pricing-scope .btn-plain.invert:hover {
-  transform: translateY(-1px);
-}
 
-.pricing-scope .plan .btn-plain:hover {
-  color: white;
-  background-color: #3e517a;
-  transform: translateY(-1px);
-}
-.pricing-scope .plan .plan-foot {
-  align-self: end;
-  text-align: center;
-}
-/* ===================== Pricing VALUE STRIPE ===================== */
-.value-stripe {
-  padding: clamp(28px, 5vw, 56px) 0;
-  border-top: 1px solid color-mix(in srgb, var(--brand-navy), transparent 70%);
-  border-bottom: 1px solid
-    color-mix(in srgb, var(--brand-navy), transparent 70%);
-}
-
-.value-grid-ruled {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: clamp(20px, 5vw, 48px);
-  row-gap: 24px;
-}
-
-.value-grid-ruled::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 1px;
-  transform: translateX(-0.5px);
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    color-mix(in srgb, var(--brand-navy), transparent 80%) 12%,
-    color-mix(in srgb, var(--brand-navy), transparent 80%) 88%,
-    transparent 100%
-  );
-}
-
-.value-block {
-  padding: 0;
-  background: none;
-  border: 0;
-}
-
-/* inline CTA: blended into the band with a thin top rule */
-.value-cta-inline {
-  grid-column: 1 / -1;
-  display: flex;
+/* Card B — bundle saver */
+.deal-card.mod-bundle .btn-plain {
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding-top: 18px;
-  margin-top: 4px;
-  border-top: 1px solid color-mix(in srgb, var(--brand-navy), transparent 80%);
-}
-
-.value-cta-inline h2 {
-  font-family: var(--heading-font);
-  font-weight: 300;
-  letter-spacing: -0.5px;
+  padding: 14px 28px;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
   color: var(--brand-navy);
+  transition: all 0.25s ease;
 }
-
-/* typography harmony */
-.value-stripe .value-block h4 {
-  font-family: var(--heading-font);
-  font-weight: 300; /* skinny like your H2 */
-  letter-spacing: -0.5px;
-  color: var(--brand-navy);
-  font-size: clamp(
-    20px,
-    2.2vw,
-    24px
-  ); /* classy, a touch larger than default h4 */
-  line-height: 1.2;
-}
-.value-stripe p,
-.value-stripe li {
-  font-family: var(--default-font);
-  color: var(--body-ink);
-}
-.value-stripe .kicker {
-  display: inline-block;
-  font: 700 12px var(--nav-font);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+.deal-card.mod-bundle .btn-plain:hover {
+  background: none;
   color: var(--accent-color);
-  margin-bottom: 0.25rem;
+  transform: translateY(-1px);
 }
 
-/* tighten the list a bit so it reads elegant, not chunky */
-.bulleted.two-col.tight {
-  columns: 2;
-  column-gap: 20px;
-}
-.bulleted.two-col.tight li {
-  break-inside: avoid;
-  margin: 0 0 6px;
-}
-
-/* responsive: remove vertical rule & stack */
-@media (max-width: 992px) {
-  .value-grid-ruled {
-    grid-template-columns: 1fr;
+/* ========================================
+   RESPONSIVE
+======================================== */
+@media (max-width: 575px) {
+  .mh-title {
+    font-size: 1.9rem;
   }
-  .value-grid-ruled::before {
-    display: none;
+  .pricing-toggle {
+    width: 100%;
+    max-width: 360px;
   }
-  .value-cta-inline {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 12px;
+  .pricing-toggle .toggle-btn {
+    flex: 1;
   }
 }
-/* ===== Fix Pricing Hero ===== */
-.pricing-page .page-title.has-hero {
-  background: none !important;
-  padding: 96px 0 40px !important; /* tighter than the global 160px */
+/* Side-by-side on desktop */
+@media (min-width: 992px) {
+  .deals-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-.pricing-page .page-title.has-hero:before {
-  z-index: 0;
-}
-.pricing-page .page-title.has-hero .page-hero-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-.pricing-page .page-title.has-hero .container {
-  position: relative;
-  z-index: 2;
-}
-
 /* ============================================
    MENTORSHIP — Hero, Text, Stacked Images
    ============================================ */
 
-/* --- Clean hero: eyebrow + title only --- */
 .mentorship-page .page-title.has-hero {
   padding: 140px 0 44px;
   text-align: center;
@@ -3988,7 +3897,7 @@ body.no-hero main {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   font-weight: 600;
-  color: #fff; /* white on dark hero */
+  color: #fff;
   display: inline-block;
   margin-bottom: 6px;
 }
@@ -4013,7 +3922,7 @@ body.no-hero main {
 .mentorship-page .mint-card h2,
 .mentorship-page .mentorship-teaser h3 {
   display: block;
-  font-size: 2.2rem; 
+  font-size: 2.2rem;
   font-weight: 300;
   line-height: 1.3;
   letter-spacing: -0.5px;
@@ -4022,7 +3931,7 @@ body.no-hero main {
   font-family: var(--heading-font);
 }
 
-/* Paragraphs / supporting copy -> body-text */
+
 .mentorship-page .section-title p,
 .mentorship-page .mint-card p,
 .mentorship-page .mentorship-teaser p,
@@ -4035,7 +3944,6 @@ body.no-hero main {
   margin-bottom: 14px;
 }
 
-
 .mentorship-page .short-strong {
   display: block;
   font-size: 1rem;
@@ -4044,7 +3952,6 @@ body.no-hero main {
   margin-bottom: 6px;
   color: color-mix(in srgb, var(--default-color), transparent 10%);
 }
-
 
 .mentorship-page .mint-list {
   padding-left: 0;
@@ -4062,7 +3969,6 @@ body.no-hero main {
   line-height: 1.6;
 }
 
-
 .mentorship-page .mentorship-intro {
   padding-top: 24px;
 }
@@ -4076,13 +3982,12 @@ body.no-hero main {
   margin: 0 auto;
 }
 
-
 .mentorship-page .stacked-photos > a:first-child {
   display: block;
-  background: #eee; 
+  background: #eee;
   border-radius: 14px;
   overflow: hidden;
-  aspect-ratio: 4 / 3; 
+  aspect-ratio: 4 / 3;
   position: relative;
 }
 .mentorship-page .stacked-photos > a:first-child img {
@@ -4250,7 +4155,7 @@ body.no-hero main {
   color: var(--heading-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
 }
-/* Partner tiles (diamond corner accent) */
+/* Partner tiles  */
 .partner-tile {
   height: 100%;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
@@ -4338,7 +4243,7 @@ body.no-hero main {
   color: var(--accent-color);
 }
 
-/* CTA section reuse with slightly stronger overlay */
+
 .cta-partners img {
   object-fit: cover;
 }
@@ -4360,42 +4265,59 @@ body.no-hero main {
 /* =======================
    Athletes & Coaches Page
    ======================= */
-.athletes-page .page-title.athletes-hero{
+.athletes-page .page-title.athletes-hero {
   position: relative;
   padding: 160px 0 40px;
   text-align: center;
   overflow: hidden;
 }
-.athletes-page .athletes-hero-img{
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
+.athletes-page .athletes-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  opacity: .25;               /* soft overlay */
+  opacity: 0.25; /* soft overlay */
   mix-blend-mode: multiply;
 }
-.athletes-page .chip-row{
-  display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:14px;
+.athletes-page .chip-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 14px;
 }
-.athletes-page .chip{
-  display:inline-flex; align-items:center; gap:8px;
-  padding:8px 12px; border-radius:999px;
+.athletes-page .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
   background: color-mix(in srgb, var(--accent-color), #ffffff 88%);
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 82%);
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
-/* Split Program (fresh layout) */
-.athletes-page .split-program{
+.athletes-page .split-program {
   position: relative;
   background: var(--background-color);
 }
-.athletes-page .split-program .diagonal-divider{
-  position: absolute; left:0; right:0; bottom:-60px; height:120px;
-  background: linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--accent-color), #ffffff 94%) 60%, transparent 100%);
+.athletes-page .split-program .diagonal-divider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  height: 120px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    color-mix(in srgb, var(--accent-color), #ffffff 94%) 60%,
+    transparent 100%
+  );
   transform: skewY(-3deg);
   z-index: 0;
 }
-.athletes-page .split-card{
+.athletes-page .split-card {
   background: var(--surface-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
   border-radius: 16px;
@@ -4403,89 +4325,106 @@ body.no-hero main {
   height: 100%;
   display: grid;
   grid-template-rows: 200px auto;
-  box-shadow: 0 10px 26px rgba(0,0,0,.06);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
 }
-.athletes-page .split-card-media{
+.athletes-page .split-card-media {
   position: relative;
   overflow: hidden;
 }
-.athletes-page .split-card-media img{
-  width: 100%; height: 100%; object-fit:cover; transform: scale(1.02);
-  transition: transform .35s ease;
+.athletes-page .split-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform 0.35s ease;
 }
 
-.athletes-page .split-card-body{
+.athletes-page .split-card-body {
   padding: 22px 22px 24px;
 }
-.athletes-page .split-card .checklist{
-  margin: 12px 0 16px; padding-left: 0; list-style: none;
+.athletes-page .split-card .checklist {
+  margin: 12px 0 16px;
+  padding-left: 0;
+  list-style: none;
 }
-.athletes-page .split-card .checklist li{
-  padding-left: 26px; position: relative; margin: 6px 0;
-   font-size: 1rem;
+.athletes-page .split-card .checklist li {
+  padding-left: 26px;
+  position: relative;
+  margin: 6px 0;
+  font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
-.athletes-page .split-card .checklist li::before{
+.athletes-page .split-card .checklist li::before {
   content: "✔";
-  position: absolute; left: 0; top: 0; line-height: 1;
-  color: var(--accent-color); font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
+  color: var(--accent-color);
+  font-weight: 700;
 }
 .athletes-page .split-card.athletes .mh-title.h3,
-.athletes-page .split-card.coaches .mh-title.h3{
+.athletes-page .split-card.coaches .mh-title.h3 {
   font-size: 30px !important;
 }
 
 /* Playbook Sessions */
-.athletes-page .playbook{
+.athletes-page .playbook {
   background: #f8f4ea;
 }
-.athletes-page .session-card{
+.athletes-page .session-card {
   background: var(--surface-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   border-radius: 14px;
   padding: 22px;
   height: 100%;
-  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   position: relative;
 }
 .athletes-page .h5 {
-font-size: 1.3rem;
-font-weight: 300;
-line-height: 1.3;
-margin-bottom: 20px;
-color: #3e517a;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #3e517a;
 }
-.athletes-page .session-card .session-num{
-  position: absolute; top: -14px; left: 16px;
+.athletes-page .session-card .session-num {
+  position: absolute;
+  top: -14px;
+  left: 16px;
   background: #3e517a;
-  border-radius: 999px; padding: 6px 12px; font-weight: 700; font-size: .85rem;
-  letter-spacing: .05em;
-  color:  white;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: white;
 }
-.athletes-page .session-card .bullet{
-  margin: 10px 0 0; padding-left: 18px;
+.athletes-page .session-card .bullet {
+  margin: 10px 0 0;
+  padding-left: 18px;
 }
-.athletes-page .session-card .bullet li{
+.athletes-page .session-card .bullet li {
   margin: 6px 0;
-   font-size: 1rem;
+  font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 
 /* CTA */
-.athletes-page .athlete-cta{
+.athletes-page .athlete-cta {
   background: color-mix(in srgb, var(--accent-color), #ffffff 88%);
 }
-.athletes-page .leader-cta{
-  text-align:center;
+.athletes-page .leader-cta {
+  text-align: center;
   background: var(--surface-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
   border-radius: 14px;
   padding: 28px 20px;
-  box-shadow: 0 10px 26px rgba(0,0,0,.06);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
 }
 
 .btn-athletes {
@@ -4504,8 +4443,10 @@ color: #3e517a;
   color: var(--accent-color);
   transform: translateY(-1px);
 }
-@media (max-width: 576px){
-  .athletes-page .split-card{ grid-template-rows: 180px auto; }
+@media (max-width: 576px) {
+  .athletes-page .split-card {
+    grid-template-rows: 180px auto;
+  }
 }
 
 /* =========================================
@@ -4599,7 +4540,6 @@ color: #3e517a;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 
-/* PRICING TEASER (bottom section) */
 .mentorship-page .mentorship-teaser h3 {
   font-size: 2.2rem;
   font-weight: 300;
@@ -4731,8 +4671,7 @@ color: #3e517a;
    RESOURCES PAGE 
    ----------------------------------------------------------------
    ========================================================== */
-/* ===========================
-/* Page title tweaks for the tiny label */
+/* Page title */
 .resources-page .page-title {
   text-align: left;
 }
@@ -4762,10 +4701,13 @@ color: #3e517a;
 }
 .resources-page .res-head {
   margin: 0 0 10px;
-  font: var(--res-head);
   font-weight: 800;
-  color: var(--heading-color);
+   color: #3e517a !important;
 }
+.res-intro .res-span {
+  color: #3e517a;
+}
+
 .resources-page .res-body {
   margin: 0 0 14px;
   font: var(--res-body);
@@ -4841,15 +4783,16 @@ color: #3e517a;
   letter-spacing: 0.02em;
 }
 .resources-page .res-card-title {
-  margin: 8px 0 6px;
-  font: var(--res-card-title);
-  font-weight: 800;
-  color: var(--heading-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: #3e517a;
 }
 .resources-page .res-card-body {
   margin: 0 0 14px;
   font: var(--res-card-body);
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+ color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 .resources-page .res-actions {
   display: flex;
@@ -4876,19 +4819,19 @@ body.resources-page section.res-grid {
   padding-bottom: 60px;
 }
 
-/* Keep cards white */
+
 body.resources-coming-page section.res-grid .res-card,
 body.resources-page section.res-grid .res-card {
   background: #fff;
 }
 
-/* Keep the info strip NOT beige */
+
 body.resources-coming-page section.res-grid .res-note,
 body.resources-page section.res-grid .res-note {
-  background: #fff; /* or #fafafa if you prefer */
+  background: #fff; 
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 12px 14px; /* keep its padding */
+  padding: 12px 14px; 
 }
 
 /* Info strip */
@@ -4906,6 +4849,9 @@ body.resources-page section.res-grid .res-note {
 }
 .resources-page .res-note i {
   color: var(--res-accent);
+}
+.res-note {
+   color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
 }
 body.resources-coming-page .page-title .res-tiny,
 body.resources-page .page-title .res-tiny {
