@@ -1443,9 +1443,12 @@ body {
   border: 1px solid var(--bk-border);
   padding: 20px;
 }
-.booking-page .bk-card h3 {
-  color: var(--bk-navy);
-  margin: 0;
+.mh-p {
+    font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: #3e517a
 }
 .booking-page .bk-card .body-text {
   color: rgba(15, 23, 33, 0.75);
@@ -3798,7 +3801,7 @@ body.no-hero main {
 }
 
 .deals-hub {
-  background: #f9f4ea; 
+  background: #f9f4ea;
   padding: 80px 0;
   border-top: 1px solid rgba(62, 81, 122, 0.15);
   border-bottom: 1px solid rgba(62, 81, 122, 0.15);
@@ -3930,7 +3933,6 @@ body.no-hero main {
   margin-bottom: 24px;
   font-family: var(--heading-font);
 }
-
 
 .mentorship-page .section-title p,
 .mentorship-page .mint-card p,
@@ -4078,62 +4080,137 @@ body.no-hero main {
    Partnerships Page 
    ========================= */
 
-/* Intro card + ribbon */
-.intro-card {
-  background: var(--surface-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  padding: 28px;
+/* Hero */
+.partner-hero {
+  background: var(--beige);
   position: relative;
-  border-radius: 12px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
-.intro-card .ribbon {
-  position: absolute;
-  top: 16px;
-  left: -8px;
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  padding: 6px 12px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
-}
-.intro-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-.intro-list li {
-  display: flex;
+
+.partner-hero .grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
   align-items: center;
+}
+.hero-tags .tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px dashed var(--navy, #3e517a);
+  border-color: color-mix(in srgb, var(--navy, #3e517a), transparent 65%);
+  color: var(--navy, #3e517a);
+  background: rgba(255, 255, 255, 0.5);
+  background: #fff8;
+}
+.partner-hero .hero-photo {
+  border-radius: 22px;
+  overflow: hidden;
+  aspect-ratio: 5 / 4;
+}
+
+.partner-hero .hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .partner-hero .grid {
+    grid-template-columns: 1fr;
+  }
+  .partner-hero .hero-photo {
+    aspect-ratio: 4 / 3;
+  } /* a bit shorter on mobile */
+}
+.hero-photo .ph {
+  aspect-ratio: 5/4;
+  width: 100%;
+  background: linear-gradient(135deg, #e5efe7, #cfe0d6);
+}
+.partners-title {
+   font-family: var(--heading-font) ;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #3e517a;
+  margin-bottom: 16px;
+}
+.ways-title {
+   font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: #3e517a
+}
+.partner-card .body-text {
+  font-size: 1rem !important;
+  line-height: 1.8 ;
+  margin-bottom: 20px ;
+  color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
+}
+/* partner cards */
+
+.partner-ways {
+  background-color: #f8f4ea;
+}
+.partnerships-page .partner-card {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 86%);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+.partnerships-page .partner-card:hover {
+  transform: translateY(-4px) rotate(-0.2deg);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+.partnerships-page .partner-card .pc-media {
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+.partnerships-page .partner-card .pc-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform 0.25s ease;
+}
+.partnerships-page .partner-card:hover .pc-media img {
+  transform: scale(1.06);
+}
+.partnerships-page .partner-card .pc-body {
+  padding: 20px 18px;
+}
+.partnerships-page .partner-card h3 {
+font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: #3e517a;
+}
+.partnerships-page .mini-tags {
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  padding: 6px 0;
+  margin-top: 10px;
 }
-.intro-list i {
-  color: var(--accent-color);
-}
-
-/* Blob accent beside image */
-.hero-blob-wrap {
-  position: relative;
-}
-.hero-blob-wrap .blob {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  right: -14px;
-  bottom: -14px;
-  width: 160px;
-  height: 160px;
-  filter: blur(0.5px);
-  background: color-mix(in srgb, var(--accent-color), #ffffff 75%);
-  border-radius: 48% 52% 43% 57% / 52% 45% 55% 48%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+.partnerships-page .mini-tags span {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+ color: color-mix(in srgb, var(--default-color), transparent 25%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
-.btn-solid,
-.btn-outline {
+/* subtle note */
+.partnerships-page .subtle-note .btn.btn-plain {
   display: inline-flex;
   align-items: center;
   padding: 14px 28px;
@@ -4143,124 +4220,12 @@ body.no-hero main {
   font-weight: 500;
   color: var(--brand-navy);
   transition: all 0.25s ease;
+  margin-top: auto;
 }
-
-.btn-solid:hover {
+.partnerships-page .subtle-note .btn.btn-plain:hover {
   background: none;
   color: var(--accent-color);
   transform: translateY(-1px);
-}
-.btn-outline {
-  background: transparent;
-  color: var(--heading-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
-}
-/* Partner tiles  */
-.partner-tile {
-  height: 100%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  background: var(--surface-color);
-  padding: 22px 20px 18px;
-  border-radius: 14px;
-  position: relative;
-  transition: transform 0.25s ease, box-shadow 0.25s ease,
-    border-color 0.25s ease;
-}
-.partner-tile::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-left: 14px solid transparent;
-  border-bottom: 14px solid transparent;
-  border-top: 14px solid
-    color-mix(in srgb, var(--accent-color), transparent 10%);
-  border-right: 14px solid
-    color-mix(in srgb, var(--accent-color), transparent 10%);
-  border-top-right-radius: 2px;
-}
-.partner-tile:hover {
-  transform: translateY(-4px);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 65%);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
-}
-.partner-icon {
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
-  border-radius: 8px;
-  margin-bottom: 12px;
-  font-size: 22px;
-  color: var(--accent-color);
-}
-.partner-tile .mini-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 10px;
-  font-weight: 700;
-  font-size: 0.92rem;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-}
-.partner-tile .mini-link:hover {
-  color: var(--accent-color);
-}
-.partner-tile .mini-link::after {
-  content: "↗";
-  font-size: 0.9em;
-}
-
-.includes .include-card {
-  position: relative;
-  height: 100%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  background: var(--surface-color);
-  padding: 22px 20px;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-}
-.includes .include-card .corner {
-  position: absolute;
-  left: 12px;
-  top: 12px;
-  width: 12px;
-  height: 12px;
-  background: color-mix(in srgb, var(--accent-color), #fff 70%);
-  transform: rotate(45deg);
-  border-radius: 2px;
-}
-.includes .include-card h4 {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.includes .include-card h4 i {
-  color: var(--accent-color);
-}
-
-
-.cta-partners img {
-  object-fit: cover;
-}
-.cta-partners:before {
-  background: color-mix(in srgb, var(--background-color), transparent 40%);
-}
-
-/* Responsive tweaks */
-@media (max-width: 576px) {
-  .btn-solid,
-  .btn-outline {
-    width: 100%;
-  }
-  .hero-blob-wrap .blob {
-    width: 120px;
-    height: 120px;
-  }
 }
 /* =======================
    Athletes & Coaches Page
@@ -4702,7 +4667,7 @@ body.no-hero main {
 .resources-page .res-head {
   margin: 0 0 10px;
   font-weight: 800;
-   color: #3e517a !important;
+  color: #3e517a !important;
 }
 .res-intro .res-span {
   color: #3e517a;
@@ -4792,7 +4757,7 @@ body.no-hero main {
 .resources-page .res-card-body {
   margin: 0 0 14px;
   font: var(--res-card-body);
- color: color-mix(in srgb, var(--default-color), transparent 25%);
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 .resources-page .res-actions {
   display: flex;
@@ -4819,19 +4784,17 @@ body.resources-page section.res-grid {
   padding-bottom: 60px;
 }
 
-
 body.resources-coming-page section.res-grid .res-card,
 body.resources-page section.res-grid .res-card {
   background: #fff;
 }
 
-
 body.resources-coming-page section.res-grid .res-note,
 body.resources-page section.res-grid .res-note {
-  background: #fff; 
+  background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 12px 14px; 
+  padding: 12px 14px;
 }
 
 /* Info strip */
@@ -4851,7 +4814,7 @@ body.resources-page section.res-grid .res-note {
   color: var(--res-accent);
 }
 .res-note {
-   color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
+  color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
 }
 body.resources-coming-page .page-title .res-tiny,
 body.resources-page .page-title .res-tiny {
