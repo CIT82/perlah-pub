@@ -2316,54 +2316,34 @@ body.no-hero main {
    ============================ */
 
 body.leader-page {
-  --header-height: 80px; /* adjust if your header is taller */
+  --header-height: 40px !important; 
   padding-top: var(--header-height);
 }
 
 /* ---------- Page Title  ---------- */
-.leader-page .page-title {
-  text-align: center;
-  padding: 140px 0 44px;
-  background: transparent;
-  border-bottom: 1px solid,
-    color-mix(in srgb, var(--default-color), transparent 88%);
-}
-.leader-page .page-title .mh-tiny {
+.leader-hero .mh-title {
   display: inline-block;
-  margin-bottom: 6px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.85rem;
-  color: #3e517a;
+font-family: var(--heading-font) !important;
+  font-size: 2.5rem !important;
+  font-weight: 300 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.5px !important;
+  color: var(--brand-navy) !important;
+
 }
-.leader-page .page-title .mh-title,
-.leader-page .page-title h1 {
-  display: block;
-  font-family: var(--heading-font);
-  font-size: clamp(32px, 5vw, 42px);
-  font-weight: 300;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
-  color: #3e517a;
-  margin: 0;
+.leader-hero .mh-tiny {
+display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 .body-text {
   font-size: 1rem !important;
   line-height: 1.8 !important;
   margin-bottom: 20px !important;
   color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
-}
-
-.leader-page .mh-title {
-  font-weight: 800;
-  line-height: 1.2;
-  margin: 10px 0 12px;
-  font-size: clamp(28px, 5vw, 42px);
-}
-.leader-page .body-text {
-  color: color-mix(in srgb, var(--default-color), transparent 12%);
-  font-size: 1.05rem;
 }
 
 /* ---------- Hero (angled split with blob image) ---------- */
