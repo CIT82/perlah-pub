@@ -5,11 +5,11 @@
     <title>Booking - Hire Ground</title>
     <meta
       name="description"
-      content="Hire Ground provides practical training in leadership, communication, and workplace readiness—plus business support in areas like QuickBooks, insurance, and team training."
+      content="Book a Hire Ground discovery call or training session to start building confidence, leadership, and workplace success today."
     />
     <meta
       name="keywords"
-      content="Hire Ground, professional development, leadership training, workplace readiness, mentorship programs, business coaching"
+      content="Hire Ground booking, discovery call, leadership session, training appointment, career development"
     />
 
     <!-- Favicons -->
@@ -110,142 +110,242 @@
         </nav>
       </div>
     </header>
-   
-  <main class="main">
-<section class="page-title booking-hero">
-  <div class="container">
-    <span class="mh-tiny">Booking</span>
-    <h1 class="mh-title">Booking & Availability</h1>
-  </div>
-</section>
-    <!-- HERO: split text + photo -->
-   <!-- Intro split (photo + Pick your path) -->
-<section class="bk-intro">
-  <div class="container">
-    <div class="row g-4 align-items-center">
-      <div class="col-lg-7">
-        <h2 class="mh-title">Pick your path</h2>
-        <p class="body-text bk-lead">
-          Choose a service and either call us now or send a quick request, we’ll reply with times and next steps.
-        </p>
-        <div class="bk-cta-row">
-          <a href="#bk-request" class="bk-btn">Send a request</a>
+
+    <main class="main">
+      <section class="page-title booking-hero">
+        <div class="container">
+          <span class="mh-tiny">Booking</span>
+          <h1 class="mh-title">Booking & Availability</h1>
         </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="bk-photo">
-          <img src="assets/img/mentors.jpg" alt="Friendly coaching session" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <!-- SERVICE PICKER-->
-    <section class="bk-band bk-band--beige" id="bk-picker">
-      <div class="container">
-        <div class="text-center mb-4">
-          <h2 class="mh-p">What would you like to book?</h2>
-          <p class="body-text">Make a quick selection below.</p>
-        </div>
-
-        <div class="row g-4">
-          <!-- Picker (radio cards) -->
-          <div class="col-lg-5">
-            <form id="bk-select">
-              <div class="bk-option">
-                <input type="radio" id="svc-discovery" name="service" value="Discovery Call" checked />
-                <label for="svc-discovery">
-                  <i class="bi bi-chat-dots"></i>
-                  <div>
-                    <strong>Discovery Call</strong>
-                    <span>15–20 min alignment chat</span>
-                  </div>
-                </label>
+      </section>
+      <!-- HERO: split text + photo -->
+      <!-- Intro split (photo + Pick your path) -->
+      <section class="bk-intro">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+              <h2 class="mh-title">Pick your path</h2>
+              <p class="body-text bk-lead">
+                Choose a service that fits your goals and let us know how you’d like to connect. Whether you prefer a quick discovery call or a full training session, we’ll follow up with details, and next steps to make scheduling easy.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <div class="bk-photo">
+                <img
+                  src="assets/img/mentors.jpg"
+                  alt="Group of young students smiling"
+                />
               </div>
-
-              <div class="bk-option">
-                <input type="radio" id="svc-workshop" name="service" value="Workshop" />
-                <label for="svc-workshop">
-                  <i class="bi bi-easel2"></i>
-                  <div>
-                    <strong>Workshop</strong>
-                    <span> Three-part series hands-on training for groups </span>
-                  </div>
-                </label>
-              </div>
-
-              <div class="bk-option">
-                <input type="radio" id="svc-leadership" name="service" value="Leadership Training" />
-                <label for="svc-leadership">
-                  <i class="bi bi-flag"></i>
-                  <div>
-                    <strong>Leadership Training</strong>
-                    <span>Series that builds habits</span>
-                  </div>
-                </label>
-              </div>
-
-              <div class="bk-option">
-                <input type="radio" id="svc-mentorship" name="service" value="Mentorship" />
-                <label for="svc-mentorship">
-                  <i class="bi bi-stars"></i>
-                  <div>
-                    <strong>Mentorship</strong>
-                    <span>1:1 momentum and support</span>
-                  </div>
-                </label>
-              </div>
-
-              <div class="bk-inline-actions">
-                <a href="tel:1559999999" class="bk-link"><i class="bi bi-telephone"></i> Call us instead</a>
-              </div>
-            </form>
-          </div>
-
-          <!-- Request form (Formspree) -->
-          <div class="col-lg-7" id="bk-request">
-            <div class="bk-card">
-              <h3 class="mh-p">Send a quick request</h3>
-              <p class="body-text mb-3">We’ll respond with available times.</p>
-
-              <form action="https://formspree.io/f/xanpelwk" method="POST" class="bk-form">
-                <!-- service field auto-filled from picker -->
-                <input type="hidden" name="service" id="bk-service-field" value="Discovery Call" />
-
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <label class="form-label">Name</label>
-                    <input type="text" name="name" class="form-control" required />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label">Email</label>
-                    <input type="email" name="email" class="form-control" required />
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label">Preferred dates/times</label>
-                    <input type="text" name="times" class="form-control" placeholder="e.g., Weekdays after 3pm; Sat mornings" />
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label">Notes (optional)</label>
-                    <textarea name="notes" class="form-control" rows="4" placeholder="Anything else we should know?"></textarea>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="bk-btn w-auto">Send request</button>
-                  </div>
-                </div>
-
-                <!-- formspree statuses (optional) -->
-                <p class="small mt-2 mb-0">Prefer to chat? <a href="tel:1559999999" class="bk-link">Call us</a>.</p>
-              </form>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
- <!-- Footer -->
+      <!-- SERVICE PICKER-->
+      <section class="bk-band bk-band--beige" id="bk-picker">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2 class="mh-p">What would you like to book?</h2>
+            <p class="body-text">Make a quick selection below.</p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Picker (radio cards) -->
+            <div class="col-lg-5">
+              <form id="bk-select">
+                <div class="bk-option">
+                  <input
+                    type="radio"
+                    id="svc-discovery"
+                    name="service"
+                    value="Discovery Call"
+                    checked
+                  />
+                  <label for="svc-discovery">
+                    <i class="bi bi-chat-dots"></i>
+                    <div>
+                      <strong>Discovery Call</strong>
+                      <span>15–20 min alignment chat</span>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="bk-option">
+                  <input
+                    type="radio"
+                    id="svc-workshop"
+                    name="service"
+                    value="Workshop"
+                  />
+                  <label for="svc-workshop">
+                    <i class="bi bi-easel2"></i>
+                    <div>
+                      <strong>Workshop</strong>
+                      <span>
+                        Three-part series hands-on training for groups
+                      </span>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="bk-option">
+                  <input
+                    type="radio"
+                    id="svc-leadership"
+                    name="service"
+                    value="Leadership Training"
+                  />
+                  <label for="svc-leadership">
+                    <i class="bi bi-flag"></i>
+                    <div>
+                      <strong>Leadership Training</strong>
+                      <span>Series that builds habits</span>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="bk-option">
+                  <input
+                    type="radio"
+                    id="svc-mentorship"
+                    name="service"
+                    value="Mentorship"
+                  />
+                  <label for="svc-mentorship">
+                    <i class="bi bi-stars"></i>
+                    <div>
+                      <strong>Mentorship</strong>
+                      <span>1:1 momentum and support</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="bk-option">
+                  <input
+                    type="radio"
+                    id="svc-partnership"
+                    name="service"
+                    value="Partnership"
+                  />
+                  <label for="svc-partnership">
+                    <i class="bi bi-briefcase"></i>
+                    <div>
+                      <strong>Partnership</strong>
+                      <span>Schools, clubs and organizations </span>
+                    </div>
+                  </label>
+                </div>
+                <div class="bk-inline-actions">
+                  <a href="tel:1559999999" class="bk-link"
+                    ><i class="bi bi-telephone"></i> Call us instead</a
+                  >
+                </div>
+              </form>
+            </div>
+
+            <!-- Request form (Formspree) -->
+            <div class="col-lg-7" id="bk-request">
+              <div class="bk-card">
+                <h3 class="mh-p">Send a quick request</h3>
+                <p class="body-text mb-3">
+                  We’ll respond with available times.
+                </p>
+
+                <form
+                  action="https://formspree.io/f/xanpelwk"
+                  method="POST"
+                  class="bk-form"
+                >
+                  <!-- service field auto-filled from picker -->
+                  <input
+                    type="hidden"
+                    name="service"
+                    id="bk-service-field"
+                    value="Discovery Call"
+                  />
+
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label">Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Preferred dates/times</label>
+                      <input
+                        type="text"
+                        name="times"
+                        class="form-control"
+                        placeholder="e.g., Weekdays after 3pm; Sat mornings"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Notes (optional)</label>
+                      <textarea
+                        name="notes"
+                        class="form-control"
+                        rows="4"
+                        placeholder="Anything else we should know?"
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="bk-btn w-auto">
+                        Send request
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- formspree statuses (optional) -->
+                  <p class="small mt-2 mb-0">
+                    Prefer to chat?
+                    <a href="tel:1559999999" class="bk-link">Call us</a>.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      (function () {
+        const radios = document.querySelectorAll(
+          '#bk-select input[name="service"]'
+        );
+        const hidden = document.getElementById("bk-service-field");
+        const form = document.querySelector(".bk-form");
+
+        function syncSelection() {
+          const chosen = document.querySelector(
+            '#bk-select input[name="service"]:checked'
+          );
+          if (chosen) hidden.value = chosen.value;
+        }
+
+        // Keep hidden field in sync as user clicks
+        radios.forEach((r) => r.addEventListener("change", syncSelection));
+
+        // Double-check right before submit
+        if (form) form.addEventListener("submit", syncSelection);
+
+        // Initialize on page load (keeps default accurate)
+        syncSelection();
+      })();
+    </script>
+
+    <!-- Footer -->
     <footer id="footer" class="footer dark-background">
       <div class="footer-top">
         <div class="container">
