@@ -206,11 +206,10 @@ h5,
 h6 {
   font-family: var(--heading-font);
   color: var(--heading-color);
-  letter-spacing: 0; /* neutral; we’ll set per-size where needed */
+  letter-spacing: 0;
   margin: 0 0 0.5rem;
 }
 
-/* Scaled sizes (keeps template harmony, but consistent across pages) */
 h1 {
   font-size: clamp(32px, 7vw, 60px);
   font-weight: 800;
@@ -242,7 +241,7 @@ h6 {
   max-width: 1000px;
   margin-inline: auto;
   margin-bottom: 32px;
-  padding: 0; /* no underline, no extra chrome */
+  padding: 0;
 }
 
 .section-head h2 {
@@ -482,10 +481,9 @@ h6 {
     #header {
       backdrop-filter: none !important;
       -webkit-backdrop-filter: none !important;
-      transition: none !important; /* prevents janky fade/reflow */
+      transition: none !important;
     }
 
-    /* Make sure the menu sits on top instantly */
     .navmenu {
       transition: none !important;
     }
@@ -494,7 +492,7 @@ h6 {
     }
     .mobile-nav-toggle {
       z-index: 1002;
-    } /* keep the X above the panel */
+    }
   }
 
   .navmenu {
@@ -615,8 +613,8 @@ h6 {
 
 /* ===== Footer ===== */
 footer.footer {
-  --accent-color: #436d50; /* your gold */
-  --background-color: #1e1e1e; /* or whatever you picked */
+  --accent-color: #436d50;
+  --background-color: #1e1e1e;
   --default-color: #e6e6e6;
   --heading-color: #ffffff;
 }
@@ -1068,7 +1066,7 @@ body {
 .badge-soft {
   display: inline-block;
   padding: 4px 10px;
-  border-radius: 999px; /* visually slim, not a pill button control */
+  border-radius: 999px;
   font-size: 12px;
   font-weight: 700;
   color: var(--heading-color);
@@ -1091,7 +1089,6 @@ body {
   line-height: 1.2;
 }
 
-/* inline link—no chunky button */
 .link-arrow {
   font-weight: 700;
   text-decoration: none;
@@ -1104,7 +1101,7 @@ body {
   border-bottom-color: var(--accent-color);
 }
 
-/* CTA strip (line-style button, not pill) */
+/* CTA strip */
 .mission-cta {
   padding: 16px 18px;
   border-radius: 12px;
@@ -1113,25 +1110,25 @@ body {
 }
 
 .mission-intro .col-bubbles {
-  position: relative; /* anchor for children */
-  min-height: 340px; /* guarantees space for the cluster */
+  position: relative;
+  min-height: 340px;
 }
 
 .mission-intro .bubble-cluster {
-  position: absolute; /* float inside the right column */
-  inset: 0; /* fill the column */
-  margin: auto; /* let widths/heights center */
+  position: absolute;
+  inset: 0;
+  margin: auto;
   height: 100%;
-  max-width: 540px; /* keeps cluster from stretching too wide */
+  max-width: 540px;
 }
 
 .mission-intro .col-bubbles {
   display: flex;
-  align-items: center; /* vertical centering for the cluster wrapper */
+  align-items: center;
 }
 
 .mh-attrib {
-  margin-top: 4px !important; /* remove the negative margin that can collide */
+  margin-top: 4px !important;
 }
 
 .bubble-cluster,
@@ -1490,7 +1487,7 @@ body {
     padding-top: 72px;
   }
 }
-/* === Booking: intro split (matches <section class="bk-intro">) === */
+/* === Booking: intro split === */
 .booking-page .bk-intro {
   padding: 72px 0 40px;
   background: #fff;
@@ -1508,7 +1505,7 @@ body {
 
 .booking-page .bk-btn,
 .booking-page .bk-btn-submit {
-  all: unset; /* wipe out browser/Bootstrap button defaults */
+  all: unset;
   display: inline-flex;
   align-items: center;
   padding: 14px 28px;
@@ -1863,7 +1860,7 @@ body {
 
 /* --- Mission + Vision section --- */
 .mission-vision {
-  --background-color: #f9f4ea; /* beige background */
+  --background-color: #f9f4ea;
   --surface-color: #ffffff;
   padding: 60px 0;
 }
@@ -2347,7 +2344,7 @@ body.leader-page {
   position: relative;
   overflow: clip;
   background: #fff;
-  padding: 100px 0 80px; /* already offset by body padding-top */
+  padding: 100px 0 80px;
   isolation: isolate;
 }
 .leader-page .leader-hero::before {
@@ -2614,7 +2611,6 @@ body.leader-page {
   transform: translateY(-1px);
 }
 
-/* slightly tighter spacing on very small screens */
 @media (max-width: 575.98px) {
   .hg-slim-body {
     padding: 14px 16px 16px;
@@ -2636,9 +2632,9 @@ body.leader-page {
 .booking-page {
   --bk-navy: #3e517a; /* headings */
   --bk-ink: #0f1721; /* body text */
-  --bk-mute: #374151; /* muted text */
-  --bk-accent: var(--accent-color); /* use your site accent */
-  --bk-beige: #f9f4ea; /* beige band */
+  --bk-mute: #374151;
+  --bk-accent: var(--accent-color);
+  --bk-beige: #f9f4ea;
   --bk-surface: var(--surface-color, #fff);
   --bk-border: rgba(15, 23, 33, 0.14);
 }
@@ -2669,7 +2665,7 @@ body.leader-page {
   width: 100%;
   height: auto;
   object-fit: cover;
-  aspect-ratio: 4/3; /* change if you want a taller/shorter photo */
+  aspect-ratio: 4/3;
 }
 
 /* hero CTAs */
@@ -2817,10 +2813,10 @@ booking-page .bk-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 28px; /* make it bigger */
+  padding: 14px 28px;
   border: 2px solid var(--bk-accent);
-  background: var(--bk-accent); /* filled background */
-  color: #fff; /* white text */
+  background: var(--bk-accent);
+  color: #fff;
   font-weight: 600;
   border-radius: 8px;
   text-decoration: none;
@@ -3296,12 +3292,11 @@ booking-page .bk-btn {
   } /* mobile/tablet */
 }
 
-/* Simple + reliable: only on pages you mark `no-hero` */
 body.no-hero main {
   padding-top: var(--header-h);
 }
 
-/* Optional: automatic on modern browsers (no class needed) */
+/* Optional: automatic on modern browsers */
 @supports (selector(:has(*))) {
   header.header.fixed-top + main:not(:has(.page-title)) {
     padding-top: var(--header-h);
@@ -3437,9 +3432,7 @@ body.no-hero main {
 /* ===========================
    CONTACT PAGE 
    =========================== */
-/* ===== CONTACT v2 (scoped & prefixed) ===== */
 
-/* No hero tint on this page */
 #contact-hero::before,
 #contact-hero::after {
   content: none !important;
@@ -3449,7 +3442,7 @@ body.no-hero main {
 /* Two-column layout */
 .hg-contact2 .hg-row {
   display: grid;
-  grid-template-columns: 1fr 1.1fr; /* slightly wider form column */
+  grid-template-columns: 1fr 1.1fr;
   gap: 40px;
   align-items: start;
 }
@@ -3462,9 +3455,9 @@ body.no-hero main {
 /* Small photo */
 .hg-contact2 .hg-photo {
   width: 100%;
-  max-width: 360px; /* controls how wide it gets */
+  max-width: 360px;
   margin: 0 0 20px;
-  border-radius: 12px; /* rounded rectangle instead of circle */
+  border-radius: 12px;
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
@@ -3473,7 +3466,7 @@ body.no-hero main {
 .hg-contact2 .hg-photo img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* keeps proportions */
+  object-fit: cover;
   display: block;
 }
 
@@ -3539,7 +3532,7 @@ body.no-hero main {
   font-family: var(--heading-font);
 }
 
-/* Form fields (Mission body spec) */
+/* Form fields */
 .hg-contact2 .hg-label,
 .hg-contact2 .hg-input,
 .hg-contact2 .hg-textarea {
@@ -3887,8 +3880,8 @@ body.no-hero main {
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: -0.5px;
-  color: #fff; /* white on dark hero */
-  margin-bottom: 0; /* hero already has spacing */
+  color: #fff;
+  margin-bottom: 0;
   font-family: var(--heading-font);
 }
 
@@ -3994,7 +3987,6 @@ body.no-hero main {
   display: block;
 }
 
-/* Keep it tidy on small screens */
 @media (max-width: 991.98px) {
   .mentorship-page .stacked-photos .photo-floating {
     right: -2%;
@@ -4185,7 +4177,6 @@ body.no-hero main {
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
-/* subtle note */
 .partnerships-page .subtle-note .btn.btn-plain {
   display: inline-flex;
   align-items: center;
@@ -4588,7 +4579,7 @@ body.no-hero main {
     margin-left: 36px;
   }
 }
-/* Discovery button (intro) */
+/* Discovery button */
 .mentorship-page .btn.btn-mentorship {
   border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
   color: var(--brand-navy);
@@ -4698,7 +4689,7 @@ body.no-hero main {
   color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 
-/* Cards (no links — disabled buttons only) */
+/* Cards */
 .resources-page .res-card {
   height: 100%;
   background: var(--res-surface);
@@ -4802,7 +4793,6 @@ body.resources-page .page-title .res-tiny {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-/* "Free Tools & Downloads" (main hero title) */
 body.resources-coming-page .page-title .res-title,
 body.resources-coming-page .page-title h1.res-title a,
 body.resources-page .page-title .res-title,
@@ -4815,10 +4805,9 @@ body.resources-page .page-title h1.res-title a {
   color: var(--brand-navy);
   margin-bottom: 1rem;
   font-family: var(--heading-font);
-  text-decoration: none; /* in case it's wrapped in <a> */
+  text-decoration: none;
 }
 
-/* "What's landing first" (section heading) */
 body.resources-coming-page .res-grid .section-title .res-grid-title,
 body.resources-page .res-grid .section-title .res-grid-title {
   font-size: 2.2rem;
@@ -4828,11 +4817,6 @@ body.resources-page .res-grid .section-title .res-grid-title {
   color: #3e517a;
 }
 
-/* The 3 short lines (each styled the same):
-   - "New resources rolling out — coming soon."
-   - "Practical, printable, ready when you are."
-   - "These tools will appear here as they’re ready. No sign-ups required."
-*/
 body.resources-coming-page .res-flag,
 body.resources-coming-page .res-head,
 body.resources-coming-page .res-note,
@@ -4847,10 +4831,6 @@ body.resources-page .res-note {
   color: color-mix(in srgb, var(--default-color), transparent 10%);
 }
 
-/* Body paragraphs & card blurbs (the longer lines you listed)
-   - Intro paragraph under the hero
-   - Card bodies like: "One-page template, action verb bank…", etc.
-*/
 body.resources-coming-page .res-body,
 body.resources-coming-page .res-card .res-card-body,
 body.resources-page .res-body,
